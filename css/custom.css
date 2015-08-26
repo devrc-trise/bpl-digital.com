@@ -3,3 +3,9 @@
 .foundry_modal{max-width: 1000px;}
 .logo{ max-height: 50%; }
 
+@media all and (max-width: 767px) {
+.filters li {
+	float:none;
+	padding:0 12px;
+	}
+}
