@@ -20,11 +20,6 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.bpl-digital.com/what.html</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
   <loc>http://www.bpl-digital.com/work</loc>
   <changefreq>daily</changefreq>
   <priority>0.80</priority>
