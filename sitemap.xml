@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
@@ -5,47 +6,57 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
-  <loc>http://www.bpl-digital.com.com/</loc>
+  <loc>http://www.bpl-digital.com</loc>
   <changefreq>daily</changefreq>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://www.bpl-digital.com.com/what</loc>
+  <loc>http://www.bpl-digital.com/what</loc>
   <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.bpl-digital.com.com/online-ordering</loc>
+  <loc>http://www.bpl-digital.com/online-ordering</loc>
   <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.bpl-digital.com.com/work</loc>
+  <loc>http://www.bpl-digital.com/what.html</loc>
   <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.bpl-digital.com.com/contact</loc>
+  <loc>http://www.bpl-digital.com/work</loc>
   <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.bpl-digital.com.com/mobile-apps</loc>
+  <loc>http://www.bpl-digital.com/contact</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.bpl-digital.com/privacy-policy</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.bpl-digital.com/mobile-apps</loc>
   <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.bpl-digital.com.com/tablet-ordering</loc>
+  <loc>http://www.bpl-digital.com/tablet-ordering</loc>
   <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.bpl-digital.com.com/rex-and-mariano</loc>
+  <loc>http://www.bpl-digital.com/rex-and-mariano</loc>
   <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.bpl-digital.com.com/crabbies-grand-national</loc>
+  <loc>http://www.bpl-digital.com/crabbies-grand-national</loc>
   <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
