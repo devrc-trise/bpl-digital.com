@@ -12,19 +12,19 @@ $(document).ready(function() {
 
     // Smooth scroll to inner links
     
-    $('.inner-link').each(function(){
-        var href = $(this).attr('href');
-        if(href.charAt(0) !== "#"){
-            $(this).removeClass('inner-link');
-        }
-    });
+ //    $('.inner-link').each(function(){
+ //        var href = $(this).attr('href');
+ //        if(href.charAt(0) !== "#"){
+ //            $(this).removeClass('inner-link');
+ //        }
+ //    });
 
-	if($('.inner-link').length){
-		$('.inner-link').smoothScroll({
-			offset: -55,
-			speed: 800
-		});
-    }
+	// if($('.inner-link').length){
+	// 	$('.inner-link').smoothScroll({
+	// 		offset: -55,
+	// 		speed: 800
+	// 	});
+ //    }
 
     // Update scroll variable for scrolling functions
 
@@ -1107,6 +1107,21 @@ var mr_cookies = {
 |*|  END COOKIE LIBRARY
 \*/
 
+// Inner links smooth scroll fix
 
+$(document).ready(function(){
+    $('a[href^="#"]').on('click',function (e) {
+        e.preventDefault();
+
+        var target = this.hash;
+        var $target = $(target);
+
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 900, 'swing', function () {
+            window.location.hash = target;
+        });
+    });
+});
 
 
