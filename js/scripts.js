@@ -735,9 +735,9 @@ $(document).ready(function() {
         // End contact form code
 
     // Get referrer from URL string 
-    if (getURLParameter("ref")) {
-        $('form.form-email').append('<input type="text" name="referrer" class="hidden" value="' + getURLParameter("ref") + '"/>');
-    }
+    // if (getURLParameter("ref")) {
+    //     $('form.form-email').append('<input type="text" name="referrer" class="hidden" value="' + getURLParameter("ref") + '"/>');
+    // }
 
     function getURLParameter(name) {
         return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [, ""])[1].replace(/\+/g, '%20')) || null;
