@@ -329,7 +329,7 @@
 			                <div class="bordered feature mb32">
 			                    <h4 class="uppercase text-center">How Much Could You Save?</h4>
 			                    <h6 class="mb32 uppercase text-center">See how much you could save when you swtich to our commission-free online ordering websites:</h6>
-			                    <form id="calx_form">
+			                    <form id="justeat">
 				                    <div class="input-with-label text-left">
 		                                <span>Total Monthly Just Eat Orders:</span>
 		                                <input id="orders" type="text" placeholder="0"/>
@@ -342,11 +342,11 @@
 		                                <span>Just Eat Commission Fee (%):</span>
 		                                <input id="percentage" type="text" value="13" placeholder="13%"/>
 		                            </div>
-		                            <p class="btn-lg btn" id="calculate">Calculate</p>
+		                            <a class="btn-lg btn" id="calculate" href="#justeat">Calculate</a>
 		                           <div id="results">
 		                            	<div class="row" id="result">
 				                            <div class="input-with-label text-left col-sm-6">
-				                                <span>Your Just Eat Bill:</span>
+				                                <span>Your Current Just Eat Bill:</span>
 				                                <p id="cost" class="lead text-center" style="color:red;"></p>
 				                            </div>
 				                            <div class="input-with-label text-left col-sm-6">
@@ -374,6 +374,9 @@
 						    var firstValue = parseFloat($('#orders').val()); // get value of field
 						    var secondValue = parseFloat($('#value').val()); // convert it to a float
 						    var thirdValue = parseFloat($('#percentage').val());
+
+						    var y = $(window).scrollTop();
+						    $(window).scrollTop(y+150);
 						    
 						    $('#cost').html(('£') + firstValue * secondValue * thirdValue / 100);
 
