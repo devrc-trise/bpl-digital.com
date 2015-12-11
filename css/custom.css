@@ -18,3 +18,41 @@
   background: #3075B0;
   color: #fff;
 }
+
+input[type="submit"] { 
+	border-color: #3075B0;
+	background: #3075B0;
+}
+
+.bg-primary input[type="submit"] {
+  color: #3075B0;
+}
+
+input[type="submit"].hollow {
+
+  border-color: #3075B0;
+  color: #3075B0;
+}
+
+input[type="submit"].hollow:hover {
+  background-color: #3075B0;
+}
+
+.checkbox-option,
+.radio-option {
+  border-color: #3075B0;
+}
+
+.checkbox-option .inner,
+.radio-option .inner {
+  border-color: #3075B0;
+
+}
+.checkbox-option.checked .inner {
+  background: #3075B0;
+}
+
+.radio-option.checked .inner {
+  background: #3075B0;
+}
+
