@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Contact Us (Online Ordering) | BPL Digital</title>
+        <meta name="Description" content="Contact BPL digital here. We build bespoke digital experiences for hospitality.">
+        <link rel="canonical" href="http://www.bpl-digital.com/tablet-calculator" />
+        <meta name="robots" content="noindex" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/ytplayer.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>    
+        <link rel="shortcut icon" href="img/bpl-favicon.ico"/>
+        <style type="text/css">section{padding: 0;}.col-md-8{margin: 0;width: 100%;}</style>
+    </head>
+    <body>
+		<div class="main-container">
+            <section>
+            	<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+            		<div class="feature boxed bg-secondary">
+            		     <div class="bordered feature mb32">
+                                <h4 class="uppercase text-center">How Much Could You Save?</h4>
+                                <h6 class="mb32 uppercase text-center">See how much you could save when you introduce tablet ordering into your restaurants</h6>
+                                <form id="justeat">
+                                    <div class="input-with-label text-left">
+                                        <span>Your Average Weekly Revenue Per Site:</span>
+                                        <input id="revenue" type="text" placeholder="0"/>
+                                    </div>
+                                    <div class="input-with-label text-left">
+                                        <span>Your Average Weekly Rota Cost:</span>
+                                        <input id="cost" type="text" placeholder="0"/>
+                                    </div>
+                                    <a class="btn-lg btn" id="calculate" href="#">Calculate</a>
+                                   <div id="results">
+                                        <div class="row" id="result">
+                                            <div class="input-with-label text-left col-sm-6">
+                                                <span>Rota Wage % using Tablet Ordering</span>
+                                                <h3 id="tablet" style="color:green;">18.5%</h3>
+                                            </div>
+                                            <div class="input-with-label text-left col-sm-6">
+                                                <span>Potential Weekly Savings Per Site</span>
+                                                <h3 id="savings">£60</h3>
+                                            </div>
+                                         </div>
+                                     </div>
+                                </form>
+                                <script>
+                                        $(document).ready(function(){
+                           $("#results").hide();
+                           $("#calculate").click(function(){
+                                                $("#results").show(400);
+                                            });
+                           $('#calculate').click(function(){ // run on button click
+                            
+                            
+                            var firstValue = parseFloat($('#revenue').val()); // get value of field
+                            var secondValue = parseFloat($('#cost').val()); // convert it to a float
+                            var thirdValue = parseFloat($('#percentage').val());
+                            
+
+                            $('#savings').html(('£') + (( ( firstValue * 0.185 ) - secondValue));
+                        });
+                    });
+                                </script>
+                            </div>
+                        </div>
+
+
+            		</div>
+            	</div>
+            </section>		
+		</div>
+		
+				
+	    <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/masonry.min.js"></script>
+        <script src="js/smooth-scroll.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
