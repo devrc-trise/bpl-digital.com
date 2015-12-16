@@ -445,15 +445,44 @@
 		                <div class="col-sm-12 text-center">
 		                    <h2 class="mb8">Start Taking Orders Online</h2>
 		                    <p class="lead mb40 mb-xs-24 text-center" style="margin:40px auto;">Fill out your details and we'll setup a time to talk about your project, no commitments.</p>
-		                    <div class="modal-container hidden-xs">
-			                    <a class="btn btn-filled btn-lg mb0 btn-modal" href="#">Get in touch</a>
-			                    <div class="foundry_modal text-center">
-		                    		<iframe src="contact-modal-online-ordering.html" frameborder="0" allowfullscreen></iframe>
-			                	</div>
-			                </div>
-			                <div class="hidden-sm hidden-md hidden-lg">
-			                    <a class="btn btn-filled btn-lg mb0" href="contact-modal-online-ordering.html">Get in touch</a>
-			                </div>
+<div class="modal-container">
+        	<a class="btn btn-lg btn-modal" href="#">Get Started</a>
+        	<div class="foundry_modal">
+        		<form name='online-ordering' action='thanks' class='text-center form-email' method='post'><input type='hidden' name='form-name' value='online-ordering' />
+            			<h4 class="uppercase mt-xs-0">Get Started</h4>
+            			<p class="lead mb64 mb-xs-24">
+            			</p>
+            			<div class="overflow-hidden">
+            				<input type="text" name="name" class="col-md-6 validate-required" placeholder="Your Name*" required />
+            				<input type="text" name="email" class="col-md-6 validate-required validate-email" placeholder="Your Email Address*" required />
+            				<input type="text" name="phone" class="col-md-6 validate-required" placeholder="Your Phone Number*" required />
+            				<input type="text" name="company" class="col-md-6" placeholder="Your Business Name" />
+<!--             				<textarea name="message" placeholder="Additional comments" rows="2"></textarea>
+ -->            				<!-- <hr> -->
+            			</div>
+            			<div class="overflow-hidden">
+            				<!-- How did you hear about us? 
+            				<div class="col-sm-6 col-sm-offset-3">
+								<h6 class="uppercase">
+								3. Lastly, how did you hear of us?
+								</h6>
+								<div class="select-option">
+									<i class="ti-angle-down"></i>
+									<select name="referrer">
+										<option selected value="Default">Select An Option</option>
+										<option value="google">Google</option>
+										<option value="website">Our Website</option>
+										<option value="friend">A Friend</option>
+										<option value="other">Other</option>
+									</select>
+								</div>
+							-->
+								<input type="submit" value="Continue" />
+                            </div>
+            			</div>
+            		</form>
+        	</div>
+</div>
 			            </div>
 			        </div>
 		    </div>
