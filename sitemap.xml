@@ -45,12 +45,22 @@
   <priority>0.64</priority>
 </url>
 <url>
+  <loc>http://www.bpl-digital.com/strategy</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
   <loc>http://www.bpl-digital.com/rex-and-mariano</loc>
   <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://www.bpl-digital.com/crabbies-grand-national</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.bpl-digital.com/burger-and-lobster</loc>
   <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>

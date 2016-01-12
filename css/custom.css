@@ -11,7 +11,11 @@
 }
 
 .btn-blue {
- border-color: #3075B0
+ border-color: #3075B0;
+}
+
+.btn-blue.btn-filled {
+ background-color: #3075B0;
 }
 
 .btn-blue:hover {
