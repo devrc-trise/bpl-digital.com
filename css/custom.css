@@ -70,3 +70,41 @@ iframe[name='google_conversion_frame'] {
     margin-top: -13px;
     float: left;
 }
+
+/* Testimonials */
+
+#testimonial p:before {
+  content: "\201C";
+  line-height: 1;
+  color: #d2d5db;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  font-size: 70px;
+  font-size: 7rem;
+}
+
+#testimonial p:after {
+    content: "\201D";
+    line-height: 1;
+    color: #d2d5db;
+    position: absolute;
+    top: 100px;
+    right: -25px;
+    font-size: 70px;
+    font-size: 7rem;
+}
+
+
+.quote-author img {
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.quote-author h6 {
+  margin-bottom: 0px;
+}
+
+
+
+
