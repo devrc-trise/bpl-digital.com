@@ -1,0 +1,6 @@
+# General CodeKit files to ignore
+config.codekit
+/min
+
+#os x
+.DS_Store
