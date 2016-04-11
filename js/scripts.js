@@ -1159,10 +1159,7 @@ $(document).ready(function() {
     var popupClose = $('<i class="popup-close"/>');
     var popupForm = $('<form/>');
     var popupEmail = $('<input type="email" placeholder="Enter your E-mail">');
-    var popupButton = $('<button/>', {
-        'class': 'btn btn-lg mb-xs-56',
-        'html':'Subscribe now'
-    });
+    var popupButton = $('<button/>', { 'class': 'btn btn-lg mb-xs-56', 'html':'Subscribe now'});
 
     $('body').append(popupOverlay);
     popupForm.append(popupEmail, popupButton);
