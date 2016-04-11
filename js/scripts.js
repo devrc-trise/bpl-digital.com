@@ -1131,7 +1131,16 @@ $(document).ready(function(){
 
 $(document).ready(function() {
 
-    var arghPopupAgain = true;
+    // localStorage.removeItem('user_popup');
+
+    var checkPopup = {
+        arghPopupAgain: true
+    };
+    var data = localStorage.getItem('user_popup');
+
+    if (data) {
+        checkPopup = JSON.parse(data);
+    }
 
     // Exit intent
     function addEvent(obj, evt, fn) {
@@ -1143,11 +1152,28 @@ $(document).ready(function() {
         }
     }
 
+    var popupOverlay = $('<div class="before-popup-bg"/>');
+    var popupBody = $('<div class="before-popup"/>');
+    var popupHeading = $('<h1/>', { 'html': 'Before you  go...'});
+    var popupText = $('<p/>', {'html': 'Get a free hours consultation and thinking with the BPL Digital team.'});
+    var popupClose = $('<i class="popup-close"/>');
+    var popupForm = $('<form/>');
+    var popupEmail = $('<input type="email" placeholder="Enter your E-mail">');
+    var popupButton = $('<button/>', {
+        'class': 'btn btn-lg mb-xs-56',
+        'html':'Subscribe now'
+    });
+
+    $('body').append(popupOverlay);
+    popupForm.append(popupEmail, popupButton);
+    popupBody.append(popupClose, popupHeading, popupText, popupForm);
+    $('body').append(popupBody);
+
     // Exit intent trigger
     addEvent(document, 'mouseout', function(evt) {
-
-        if (evt.toElement == null && evt.relatedTarget == null && arghPopupAgain) {
-            arghPopupAgain = false;
+        if (evt.toElement == null && evt.relatedTarget == null && checkPopup.arghPopupAgain) {
+            checkPopup.arghPopupAgain = false;
+            localStorage.setItem('user_popup', JSON.stringify(checkPopup));
             $('.before-popup-bg').fadeIn();
             $('.before-popup').fadeIn();
         };
@@ -1159,6 +1185,7 @@ $(document).ready(function() {
         $('.before-popup-bg').fadeOut();
         $('.before-popup').fadeOut();
     });
+
 
 });
 
