@@ -38,6 +38,7 @@
  34. Twitter
  35. Footers
  36. Spacing
+ 37. Popup "Before you go"
 
 /*!---------- 1. GLOBAL STYLES ----------*/
 
@@ -351,7 +352,7 @@ footer{ padding: 72px 0; }
 .btn:last-child, .btn:last-of-type{ margin-right: 0; }
 .btn:hover{ background: @color-primary; color: #fff; }
 .btn-icon{ width: 40px; height: 40px; font-size: 20px; min-width: 0; padding: 0; line-height: 38px; }
-.btn-lg{ height: 50px; line-height: 46px; min-width: 200px; }
+.btn-lg{ height: 50px; line-height: 48px; min-width: 200px; }
 .btn-icon.btn-lg{ width: 50px; height: 50px; line-height: 49px; font-size: 24px; min-width: 0; }
 .btn-icon.btn-sm{ width: 30px; height: 30px; line-height: 29px; font-size: 13px; min-width: 0; padding: 0 0 0 1px!important; }
 .btn-sm{ height: 30px; font-size: 11px; line-height: 27px; min-width: 0; }
@@ -1878,4 +1879,85 @@ footer.bg-dark a{ color: #fff; }
 	.pb-xs-180{ padding-bottom: 180px; }
 	.pb-xs-240{ padding-bottom: 240px !important; }
 }
+
+/*!---------- 37. POPUP "BEFORE YOU GO" ----------*/
+
+.before-popup-bg {
+	position: fixed;
+	top:0;bottom:0;left:0;right:0;
+	background: rgba(0,0,0,0.2);
+	z-index:100;
+	display:none;
+}
+
+.before-popup {
+	z-index:101;
+	position: fixed;
+	top:0;bottom:0;left:0;right:0;
+	margin:auto;
+	padding: 14px 12px 40px;
+	max-width:480px;
+	background: #fff;
+	height:320px;
+	text-align: center;
+	display:none;
+
+	> h1 {
+		font-size: 24px;
+		line-height: 1.1;
+		text-transform: uppercase;
+		margin: 35px 0 15px;
+	}
+
+	> p {
+		font-size: 18px;
+		font-family: 'Raleway', sans-serif;
+		font-weight: 300;
+		margin: 0 40px 18px;
+	}
+
+	> input {
+		width: 380px;
+		display: inline-block;
+		padding: 5px 10px;
+		margin: 0 0 27px;
+		font-family: 'Raleway', sans-serif;
+		font-weight: 300;
+		font-size: 18px;
+
+		&::-webkit-input-placeholder,
+		&::-moz-placeholder,
+		&:-ms-input-placeholder,
+		&:-moz-placeholder {
+			font-family: 'Raleway', sans-serif;
+			font-weight: 300;
+			font-size: 18px;
+			text-transform: lowercase;
+		}
+	}
+
+	.btn {
+		margin: 0;
+		padding: 0;
+		border-color: #2295ce;
+		color: #2295ce;
+		font-size: 16px;
+		font-family: 'Open Sans Bold', sans-serif;
+
+		&:hover,
+		&:focus {
+			background-color: #2295ce;
+			color: #fff;
+		}
+	}
+
+	.popup-close {
+		float: right;
+		cursor: pointer;
+		width: 20px;
+		height: 19px;
+		background: url(../img/popup-closure-icon.png) no-repeat;
+	}
+}
+
 

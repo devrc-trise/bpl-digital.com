@@ -7,7 +7,7 @@ var mr_firstSectionHeight,
     mr_floatingProjectSections,
     mr_scrollTop = 0;
 
-$(document).ready(function() { 
+$(document).ready(function() {
     "use strict";
 
     // Smooth scroll to inner links
@@ -1122,6 +1122,44 @@ $(document).ready(function(){
             window.location.hash = target;
         });
     });
+});
+
+
+
+/*BEFORE YOU GO POPUP*/
+
+
+$(document).ready(function() {
+
+    var arghPopupAgain = true;
+
+    // Exit intent
+    function addEvent(obj, evt, fn) {
+        if (obj.addEventListener) {
+            obj.addEventListener(evt, fn, false);
+        }
+        else if (obj.attachEvent) {
+            obj.attachEvent("on" + evt, fn);
+        }
+    }
+
+    // Exit intent trigger
+    addEvent(document, 'mouseout', function(evt) {
+
+        if (evt.toElement == null && evt.relatedTarget == null && arghPopupAgain) {
+            arghPopupAgain = false;
+            $('.before-popup-bg').fadeIn();
+            $('.before-popup').fadeIn();
+        };
+
+    });
+
+    // Closing the Popup Box
+    $('.before-popup .popup-close, .before-popup-bg').click(function(){
+        $('.before-popup-bg').fadeOut();
+        $('.before-popup').fadeOut();
+    });
+
 });
 
 
