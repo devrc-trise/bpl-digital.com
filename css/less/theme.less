@@ -39,6 +39,7 @@
  35. Footers
  36. Spacing
  37. Popup "Before you go"
+ 38. Page Websites
 
 /*!---------- 1. GLOBAL STYLES ----------*/
 
@@ -417,7 +418,7 @@ nav.bg-dark .logo-dark{ display: none; }
 .menu > li > ul > li{ position: relative; line-height: 24px; width: 100%; vertical-align: top; }
 .menu > li > ul > li i{ display: inline-block; margin-right: 2px; }
 .menu > li > ul > .has-dropdown:after{ color: #fff; top: 5px; right: 24px; content: "\e649"; }
-.menu > li > ul li a{ color: #fff; height: auto; padding: 6px 24px; }
+.menu > li > ul li a{ display: block; color: #fff; height: auto; padding: 6px 24px; }
 
 .menu > li > ul > li > ul{ left: 100%; top: 0; }
 
@@ -1720,6 +1721,45 @@ footer.bg-dark a{ color: #fff; }
 .pb180{ padding-bottom: 180px; }
 .pb240{ padding-bottom: 240px; }
 
+// spacing from page websites
+// padding top
+.pt140		{ padding-top: 140px; }
+.pt157		{ padding-top: 157px; }
+.pt160		{ padding-top: 160px; }
+.pt43		{ padding-top: 43px; }
+.pt60		{ padding-top: 60px; }
+.pt61		{ padding-top: 61px; }
+
+//padding right
+
+
+// padding bottom
+.pb24		{ padding-bottom: 24px; }
+.pb27		{ padding-bottom: 27px; }
+.pb33		{ padding-bottom: 33px; }
+.pb94		{ padding-bottom: 94px; }
+.pb150		{ padding-bottom: 150px; }
+.pb142		{ padding-bottom: 142px; }
+.pb152		{ padding-bottom: 152px; }
+
+// padding left
+.pl13		{ padding-left: 13px; }
+.pl14		{ padding-left: 14px; }
+
+// margin bottom
+.mb07		{ margin-bottom: 7px; }
+.mb12		{ margin-bottom: 12px; }
+.mb14		{ margin-bottom: 14px; }
+.mb15		{ margin-bottom: 15px; }
+.mb17		{ margin-bottom: 17px; }
+.mb18		{ margin-bottom: 18px; }
+.mb19		{ margin-bottom: 19px; }
+.mb25		{ margin-bottom: 25px; }
+.mb28		{ margin-bottom: 28px; }
+.mb41		{ margin-bottom: 41px; }
+.mb50		{ margin-bottom: 50px; }
+.mb00		{ margin-bottom: 0; }
+
 @media all and (max-width: 990px){
 	.mb-s-0{ margin-bottom: 0; }
 	.mb-s-8{ margin-bottom: 8px; }
@@ -1912,8 +1952,8 @@ footer.bg-dark a{ color: #fff; }
 	p {
 		font-size: 18px;
 		font-family: 'Raleway', sans-serif;
-		font-weight: 300;
-		margin: 0 40px 18px;
+		font-weight: 700;
+		margin: 0 40px 45px;
 	}
 
 	input {
@@ -1923,7 +1963,8 @@ footer.bg-dark a{ color: #fff; }
 		margin: 0 0 27px;
 		font-family: 'Raleway', sans-serif;
 		font-weight: 300;
-		font-size: 18px;
+		font-size: 16px;
+		color: #000;
 
 		&::-webkit-input-placeholder,
 		&::-moz-placeholder,
@@ -1931,18 +1972,18 @@ footer.bg-dark a{ color: #fff; }
 		&:-moz-placeholder {
 			font-family: 'Raleway', sans-serif;
 			font-weight: 300;
-			font-size: 18px;
+			font-size: 16px;
 			text-transform: lowercase;
 		}
 	}
 
 	.btn {
 		margin: 0;
-		padding: 0;
+		padding: 0 10px;
 		border-color: #2295ce;
 		background:transparent;
 		color: #2295ce;
-		font-size: 16px;
+		font-size: 12px;
 		font-family: 'Open Sans Bold', sans-serif;
 
 		&:hover,
@@ -1961,4 +2002,226 @@ footer.bg-dark a{ color: #fff; }
 	}
 }
 
+/*!---------- 38. PAGE WEBSITES ----------*/
 
+/* Buttons */
+.btn-light {
+	border-color: #2295ce;
+	background-color: transparent;
+	color: #2295ce;
+
+	&:hover,
+	&:focus {
+		background-color: #2295ce;
+		color: #fff;
+	}
+}
+
+/* icons */
+[class^='icon-pw'] {		// pw - page websites
+	display: inline-block;
+	background: url(../../img/websites-sprite.png) no-repeat;
+	vertical-align: middle;
+}
+
+.icon-pw-ux {
+	display: inline-block;
+	vertical-align: middle;
+	background-position: 0 0;
+	width: 57px;
+	height: 47px;
+}
+
+.icon-pw-wd {
+	width: 43px;
+	height: 43px;
+	background-position: -57px 0;
+}
+
+.icon-pw-adaptive {
+	width: 58px;
+	height: 41px;
+	background-position: -100px 0;
+}
+
+.icon-pw-google {
+	width: 36px;
+	height: 36px;
+	background-position: 0 -47px;
+}
+
+.icon-pw-list {
+	width: 40px;
+	height: 34px;
+	background-position: -36px -48px;
+}
+
+.icon-pw-card {
+	width: 42px;
+	height: 28px;
+	background-position: -76px -47px;
+}
+
+.icon-pw-shopping {
+	width: 37px;
+	height: 35px;
+	background-position: -119px -47px;
+}
+
+
+/* Typography */
+h2 {
+	.icon-pw-ux {
+		margin-right: 10px;
+	}
+
+	.icon-pw-wd {
+		margin-right: 26px;
+	}
+
+	.icon-pw-adaptive {
+		margin-right: 14px;
+	}
+}
+
+h3 {
+	.icon-pw-google {
+		margin-right: 18px;
+	}
+
+	.icon-pw-list {
+		margin-right: 11px;
+	}
+
+	.icon-pw-card {
+		margin-right: 10px;
+	}
+
+	.icon-pw-shopping {
+		margin-right: 17px;
+	}
+}
+
+.h2-sm,
+.h3-sm {
+	margin: 0;
+	font-size: 30px;
+	line-height: 1.1;
+	text-transform: uppercase;
+}
+
+.h3-sm {
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.fz12		{ font-size: 12px; }
+
+.color-white {
+	color: #fff;
+
+	h2,
+	h6 {
+		color: #fff;
+	}
+}
+
+.text-ls-1 {
+	p {
+		letter-spacing: -1px;
+	}
+}
+/* Partials styles */
+// main
+.websites-top {
+	padding: 46px 0 64px;
+
+	h1 {
+		margin-bottom: 46px;
+	}
+
+	.uppercase {
+		letter-spacing: 0;
+		.text-row {
+			font-weight: 700;
+		}
+	}
+	.img-wrapper {
+		margin: 0 0 0 43px;
+	}
+}
+
+.text-row {
+	display: block;
+	line-height: 1.3;
+}
+
+.text-websites {
+	p {
+		line-height: 1.5;
+	}
+}
+
+.img-caption {
+	position: relative;
+	width: 280px;
+	margin: 0 0 0 93px;
+	line-height: 1.4;
+
+	&:before,
+	&:after {
+		content: '';
+		position: absolute;
+		display: block;
+		background-color: #a1a1a1;
+	}
+
+	&:before {
+		left: -13px;
+		bottom: 2px;
+		width: 1px;
+		height: 380px;
+	}
+
+	&:after {
+		width: 11px;
+		height: 11px;
+		left: -18px;
+		bottom: 380px;
+		border-radius: 50%;
+	}
+
+	p {
+		margin: 0;
+	}
+}
+
+
+
+.w111 {
+	width: 111px;
+	display: block;
+	> img {
+		width: 100%;
+		height: auto;
+	}
+
+	@media (max-width: 767px) {
+		&.center-sm {
+			margin: 0 auto;
+		}
+	}
+}
+
+.bg-img02	{ background: #3c3b3b url(../../img/websites-img-02.png) no-repeat left top; }
+.bg-img03	{ background: #fff url(../../img/websites-img-03.png) no-repeat left top; }
+.bg-img04	{ background: #3c3b3b url(../../img/websites-img-04.png) no-repeat left top; }
+
+@media (max-width: 990px) {
+
+	.img-wrapper,
+	.img-caption {
+		display: none;
+	}
+
+}
