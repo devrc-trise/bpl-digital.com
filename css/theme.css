@@ -5992,3 +5992,6 @@ h3 .icon-pw-shopping {
     display: none;
   }
 }
+.menu > li > ul li:last-child {
+  display: none;
+}
