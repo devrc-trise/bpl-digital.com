@@ -5826,7 +5826,7 @@ footer.bg-dark a {
 /* icons */
 [class^='icon-pw'] {
   display: inline-block;
-  background: url(../../img/websites-sprite.png) no-repeat;
+  background: url(../img/websites-sprite.png) no-repeat;
   vertical-align: middle;
 }
 .icon-pw-ux {
@@ -5978,13 +5978,13 @@ h3 .icon-pw-shopping {
   }
 }
 .bg-img02 {
-  background: #3c3b3b url(../../img/websites-img-02.png) no-repeat left top;
+  background: #3c3b3b url(../img/websites-img-02.png) no-repeat left top;
 }
 .bg-img03 {
-  background: #fff url(../../img/websites-img-03.png) no-repeat left top;
+  background: #fff url(../img/websites-img-03.png) no-repeat left top;
 }
 .bg-img04 {
-  background: #3c3b3b url(../../img/websites-img-04.png) no-repeat left top;
+  background: #3c3b3b url(../img/websites-img-04.png) no-repeat left top;
 }
 @media (max-width: 990px) {
   .img-wrapper,
