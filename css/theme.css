@@ -5866,6 +5866,16 @@ footer.bg-dark a {
   height: 35px;
   background-position: -119px -47px;
 }
+.icon-pw-cms {
+  background: url(../img/icon-cms.png) no-repeat;
+  width: 51px;
+  height: 53px;
+}
+.icon-pw-handshake {
+  background: url(../img/icon-handshake.png) no-repeat;
+  width: 51px;
+  height: 53px;
+}
 /* Typography */
 h2 .icon-pw-ux {
   margin-right: 10px;
@@ -5882,10 +5892,10 @@ h3 .icon-pw-google {
 h3 .icon-pw-list {
   margin-right: 11px;
 }
-h3 .icon-pw-card {
+h3 .icon-pw-cms {
   margin-right: 10px;
 }
-h3 .icon-pw-shopping {
+h3 .icon-pw-handshake {
   margin-right: 17px;
 }
 .h2-sm,
@@ -5934,35 +5944,6 @@ h3 .icon-pw-shopping {
 }
 .text-websites p {
   line-height: 1.5;
-}
-.img-caption {
-  position: relative;
-  width: 280px;
-  margin: 0 0 0 93px;
-  line-height: 1.4;
-}
-.img-caption:before,
-.img-caption:after {
-  content: '';
-  position: absolute;
-  display: block;
-  background-color: #a1a1a1;
-}
-.img-caption:before {
-  left: -13px;
-  bottom: 2px;
-  width: 1px;
-  height: 380px;
-}
-.img-caption:after {
-  width: 11px;
-  height: 11px;
-  left: -18px;
-  bottom: 380px;
-  border-radius: 50%;
-}
-.img-caption p {
-  margin: 0;
 }
 .w111 {
   width: 111px;
