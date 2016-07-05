@@ -132,9 +132,9 @@ function getQueryVariable(variable) {
 var onReady = function () {
   var postID = getQueryVariable('postID');
   var post = new BlogPost({
-    blogId: '6480478910731184161',
+    blogId: '2280572607293321562',
     postId: postID,
-    key: 'AIzaSyD3AXPYWquSg9UpnbsE_6wxzsAPpPe7Irc'
+    key: 'AIzaSyCbUWEsc9qUoQduxztlAmY2qwK1doFZq3M'
   });
   post.init();
 };

@@ -17,7 +17,7 @@ var Blog = function (opts) {
 
   scope.onPostsFetched = function (data) {
     scope.el.empty();
-    if (data.items.length > 0) {
+    if (data.items && data.items.length > 0) {
       $.each(data.items, function (_, post) {
         scope.renderPost(post);
       });
@@ -68,8 +68,8 @@ Handlebars.registerHelper('firstImage', function (html) {
 
 var onReady = function () {
   var blog = new Blog({
-    blogId: '6480478910731184161',
-    key: 'AIzaSyD3AXPYWquSg9UpnbsE_6wxzsAPpPe7Irc'
+    blogId: '2280572607293321562',
+    key: 'AIzaSyCbUWEsc9qUoQduxztlAmY2qwK1doFZq3M'
   });
   blog.init();
 };
