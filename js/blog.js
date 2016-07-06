@@ -66,6 +66,10 @@ Handlebars.registerHelper('firstImage', function (html) {
   }
 });
 
+Handlebars.registerHelper('getOrigin', function () {
+  return encodeURIComponent(window.location.origin);
+});
+
 var onReady = function () {
   var blog = new Blog({
     blogId: '2280572607293321562',
