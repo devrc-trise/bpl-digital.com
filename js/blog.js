@@ -30,6 +30,9 @@ var Blog = function (opts) {
     scope.loadTmpl('blog-item-template', post, function (html) {
       scope.el.fadeOut(function () {
         scope.el.append(html).fadeIn('slow');
+        scope.el.find('.post-' + post.id).on('click', function (e) {
+          window.location.href = $(e.currentTarget).find('a.readmore').attr('href');
+        });
       });
     });
   };

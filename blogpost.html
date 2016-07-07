@@ -76,7 +76,7 @@
         </nav>
     </div>
     <div class="main-container">
-        <section class="pt48 bg-secondary">
+        <section class="pt48 bg-white">
           <div id="blog-item" class="container">
             <h1 style="margin-bottom:200px;">Loading blog post...</h1>
           </div>
@@ -86,8 +86,8 @@
               <div class="col-sm-12">
                 <ul class="list-inline mb0">
                   <li><h5><strong>SHARE:</strong></h5></li>
-                  <li><a class="twitter-share-button text-primary" href="https://twitter.com/intent/tweet" target="_blank"><i class="ti-twitter-alt"></i></a></li>
-                  <li><a class="gplus-share-button text-primary" href="https://plus.google.com/share" target="_target"><i class="ti-google"></i></a ></li>
+                  <li><a class="twitter-share-button text-primary" href="" target="_blank"><i class="ti-twitter-alt"></i></a></li>
+                  <li><a class="in-share-button text-primary" href="" target="_target"><i class="ti-linkedin"></i></a ></li>
                 </ul>
               </div>
             </div>
@@ -163,10 +163,6 @@
             <div class="col-xs-6">
               <span class="ti-time"></span>&nbsp;&nbsp;<span>{{ formatDate published }}</span>
             </div>
-            <div class="col-xs-6 text-right">
-              <a class="a2a_dd text-primary" href="https://www.addtoany.com/share?linkurl={{ getOrigin }}%2Fblogpost.html?postID={{ id }}" target="_blank"><span class="ti-sharethis"></span></a>
-              &nbsp;&nbsp;&nbsp;<a class="a2a_dd text-primary" href="https://www.addtoany.com/subscribe?linkurl={{ getOrigin }}%2Fblogpost.html?postID={{ id }}&amp;linkname=" target="_blank"><span class="ti-heart"></span></a>
-            </div>
           </div>
           <div class="body">
             <span class="title h1">{{ title }}</span>
@@ -202,11 +198,5 @@
     <script src="js/handlebars.js"></script>
     <script src="js/blog.js"></script>
     <script src="js/blogpost.js"></script>
-    <script async src="https://static.addtoany.com/menu/page.js"></script>
-    <script>
-    var a2a_config = a2a_config || {};
-    a2a_config.linkurl = "http://www.bpl-digital.com/blogpost.html?postID={{ id }}";
-    </script>
-    <script async src="https://static.addtoany.com/menu/feed.js"></script>
     </body>
 </html>

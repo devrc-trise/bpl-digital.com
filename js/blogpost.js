@@ -6,6 +6,7 @@ var BlogPost = function (opts) {
   var nextId = null;
   var key = opts.key;
   var url = 'https://www.googleapis.com/blogger/v3/blogs/' + blogId + '/posts/' + postId;
+  var post;
 
   scope.el = $('#blog-item');
   scope.navigationEl = $('#blogpost-navigation');
@@ -14,16 +15,16 @@ var BlogPost = function (opts) {
     if (scope.el.length == 0) return;
     scope.fetchPost(scope.onPostFetched);
     scope.initPostNav();
-    scope.initShareBtns();
   };
 
   scope.initShareBtns = function () {
     var twitterhref = "https://twitter.com/intent/tweet?" +
                $.param({text:"Great article from " + window.location.origin + "/blogpost.html?postID=" + postId});
-    var gplushref = "https://plus.google.com/share?" +
-                    $.param({url: window.location.origin + "/blogpost.html?postID=" + postId});
+    var inhref = "https://www.linkedin.com/shareArticle?" +
+                    $.param({url: window.location.origin + "/blogpost.html?postID=" + postId,
+                             mini: true, source: "BPLDigital", title: post.title});
     $('a.twitter-share-button').attr('href', twitterhref);
-    $('a.gplus-share-button').attr('href', gplushref);
+    $('a.in-share-button').attr('href', inhref);
   };
 
   scope.fetchPost = function (cb) {
@@ -64,6 +65,8 @@ var BlogPost = function (opts) {
 
   scope.onPostFetched = function (data) {
     scope.renderPost(data);
+    post = data;
+    scope.initShareBtns();
     // scope.renderComments();
   };
 

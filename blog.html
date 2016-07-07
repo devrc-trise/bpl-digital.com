@@ -118,14 +118,14 @@
     </div>
 
     <script id="blog-item-template" type="text/x-handlebars-template">
-      <div class="row blog-item">
+      <div class="row blog-item post-{{ id }}">
         <div class="col-sm-4">
           <div class="blog-item-img l-shadow">
             <img alt="{{ title }} image" src="{{ firstImage content }}">
           </div>
         </div>
         <div class="col-sm-8">
-          <div class="blog-item-content post-{{ id }} r-shadow">
+          <div class="blog-item-content r-shadow">
             <div class="row">
               <div class="col-md-12 text-primary">
                 <span class="ti-time"></span>&nbsp;&nbsp;{{ formatDate published }}
@@ -144,11 +144,7 @@
               </div>
             </div>
             <div class="row controls text-primary">
-              <div class="col-xs-6">
-                <a class="a2a_dd text-primary" href="https://www.addtoany.com/subscribe?linkurl={{ getOrigin }}%2Fblogpost.html?postID={{ id }}&amp;linkname=" target="_blank"><span class="ti-heart"></span></a>
-                &nbsp;&nbsp;&nbsp;<a class="a2a_dd text-primary" href="https://www.addtoany.com/share?linkurl={{ getOrigin }}%2Fblogpost.html?postID={{ id }}" target="_blank"><span class="ti-sharethis"></span></a>
-              </div>
-              <div class="col-xs-6 text-right uppercase">
+              <div class="col-xs-12 text-right uppercase">
                 <a href="blogpost.html?postID={{ id }}" class="readmore">Read more</a>
               </div>
             </div>
@@ -172,11 +168,5 @@
     <script src="js/moment.min.js"></script>
     <script src="js/handlebars.js"></script>
     <script src="js/blog.js"></script>
-    <script async src="https://static.addtoany.com/menu/page.js"></script>
-    <script>
-    var a2a_config = a2a_config || {};
-    a2a_config.linkurl = "http://www.bpl-digital.com/blogpost.html?postID={{ id }}";
-    </script>
-    <script async src="https://static.addtoany.com/menu/feed.js"></script>
     </body>
 </html>
