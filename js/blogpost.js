@@ -63,9 +63,8 @@ var BlogPost = function (opts) {
   };
 
   scope.onPostFetched = function (data) {
-    console.log(data);
     scope.renderPost(data);
-    scope.renderComments();
+    // scope.renderComments();
   };
 
   scope.renderComments = function () {

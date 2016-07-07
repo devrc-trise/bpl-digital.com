@@ -199,6 +199,15 @@ iframe[name='google_conversion_frame'] {
   color: #969696;
 }
 
+#blog-item .body ul {
+  list-style: inherit !important;
+}
+
+#blog-item .body ul,
+#blog-item .body ol {
+  margin: 10px 0px 0 45px;
+}
+
 /* Blog Comments */
 
 #blogpost-comments form {
