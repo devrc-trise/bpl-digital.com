@@ -110,6 +110,7 @@ iframe[name='google_conversion_frame'] {
 
 .blog-item {
   margin-bottom: 40px;
+  cursor: pointer;
 }
 
 .blog-item .blog-item-img {
