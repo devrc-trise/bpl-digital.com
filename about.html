@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Our Blog | BPL Digital</title>
+        <title>About Us | BPL Digital</title>
         <meta name="Description" content="Our blog at BPL Digital.">
         <link rel="canonical" href="http://www.bpl-digital.com/blog" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -85,16 +85,20 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 text-center">
-                        <h3 class="uppercase mb0">Our blog</h3>
+                        <h3 class="uppercase mb0">About Us</h3>
                     </div>
                 </div>
 
             </div>
         </section>
 
-        <section class="pt48 bg-secondary">
-          <div id="blog-items" class="container">
-            <h1>Loading blog posts...</h1>
+        <section>
+          <div class="container about-us">
+            <p>We are a diverse team of people, all with various backgrounds but brought together by a love of technology.</p>
+
+            <p>We started out as a single product company and have evolved into a agency specialising in the hospitality sector. Running our own product taught us the trials and tribulations of not only building the tech but making it work in the wild. Many agencies are guns for hire - they stick to the brief, build the product and deliver to the client without giving thought to what happens after that. We feel that once the product has been built, the journey has only just begun.</p>
+
+            <p>In early 2016, we took this principle as far as we could and even set up our own restaurant. What better way to test the tech you are building than to use it yourself in a real environment (read more about this experience <a href="http://www.bpl-digital.com/blogpost.html?postID=7557202400250832174">here</a>) We went this far because we believe to make good products you need to be able to empathise with both the operator and the customer and nothing beats getting experience as both! Check out more of our work <a href="work.html">here</a>.</p>
           </div>
         </section>
 
@@ -121,42 +125,6 @@
         </footer>
     </div>
 
-    <script id="blog-item-template" type="text/x-handlebars-template">
-      <div class="row blog-item post-{{ id }}">
-        <div class="col-sm-4">
-          <div class="blog-item-img l-shadow">
-            <img alt="{{ title }} image" src="{{ firstImage content }}">
-          </div>
-        </div>
-        <div class="col-sm-8">
-          <div class="blog-item-content r-shadow">
-            <div class="row">
-              <div class="col-md-12 text-primary">
-                <span class="ti-time"></span>&nbsp;&nbsp;{{ formatDate published }}
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-                <h4 class="title">{{ title }}</h4>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-                <div class="body">
-                  {{ textOnly content }}
-                </div>
-              </div>
-            </div>
-            <div class="row controls text-primary">
-              <div class="col-xs-12 text-right uppercase">
-                <a href="blogpost.html?postID={{ id }}" class="readmore">Read more</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </script>
-
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/flexslider.min.js"></script>
@@ -169,8 +137,5 @@
     <script src="js/smooth-scroll.min.js"></script>
     <script src="js/parallax.js"></script>
     <script src="js/scripts.js"></script>
-    <script src="js/moment.min.js"></script>
-    <script src="js/handlebars.js"></script>
-    <script src="js/blog.js"></script>
     </body>
 </html>
