@@ -23,7 +23,7 @@
   color: #fff;
 }
 
-input[type="submit"] { 
+input[type="submit"] {
 	border-color: #3075B0;
 	background: #3075B0;
 }
@@ -62,10 +62,10 @@ input[type="submit"].hollow:hover {
 
 /* Hide Google Retargeting iFrame */
 
-iframe[name='google_conversion_frame'] { 
+iframe[name='google_conversion_frame'] {
     height: 0 !important;
-    width: 0 !important; 
-    line-height: 0 !important; 
+    width: 0 !important;
+    line-height: 0 !important;
     font-size: 0 !important;
     margin-top: -13px;
     float: left;
@@ -296,7 +296,7 @@ iframe[name='google_conversion_frame'] {
   background-color: #333;
   float: left;
   -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
-          animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
+          animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
 }
 .sk-cube-grid .sk-cube1 {
   -webkit-animation-delay: 0.2s;
@@ -332,7 +332,7 @@ iframe[name='google_conversion_frame'] {
             transform: scale3D(1, 1, 1);
   } 35% {
     -webkit-transform: scale3D(0, 0, 1);
-            transform: scale3D(0, 0, 1); 
+            transform: scale3D(0, 0, 1);
   }
 }
 
@@ -343,6 +343,75 @@ iframe[name='google_conversion_frame'] {
   } 35% {
     -webkit-transform: scale3D(0, 0, 1);
             transform: scale3D(0, 0, 1);
-  } 
+  }
 }
 /* end Loader */
+
+.font17 {
+  font-size: 17px !important;
+}
+
+.font13 {
+  font-size: 13px !important;
+}
+
+.wwd-boxed {
+  background-color: #f8f8f8;
+  color: #4a4a4a;
+}
+
+.wwd-boxed .title {
+  font-size: 16px;
+  margin-top: 22px;
+  font-family: Roboto, Helvetica, sans-serif;
+}
+
+.wwd-boxed .description {
+  font-size: 14px;
+  line-height: 22px;
+  padding: 6px 30px 0px;
+}
+
+.btn-lg.btn-3d {
+  border-bottom: 5px solid #2e699a;
+  height: 54px;
+}
+
+.wwd-icon {
+  background-image: url(../img/wwd-sprites.png);
+  background-size: 1271px;
+  height: 113px;
+  width: 113px;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mobile-apps-icon {
+  background-position: -173px -76px;
+}
+
+.tablet-apps-icon {
+  background-position: -557px -76px;
+}
+
+.epos-integration-icon {
+  background-position: -949px -76px;
+}
+
+.house-systems-icon {
+  background-position: -173px -426px;
+}
+
+.websites-icon {
+  background-position: -561px -427px;
+}
+
+.strategy-consulting-icon {
+  background-position: -949px -426px;
+}
+
+/* Landing Page */
+.landing h1.title {
+  font-size: 50px;
+}
