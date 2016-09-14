@@ -377,6 +377,10 @@ iframe[name='google_conversion_frame'] {
   height: 54px;
 }
 
+.btn-filled:visited {
+  color: #fff;
+}
+
 .wwd-icon {
   background-image: url(../img/wwd-sprites.png);
   background-size: 1271px;
@@ -411,7 +415,74 @@ iframe[name='google_conversion_frame'] {
   background-position: -949px -426px;
 }
 
-/* Landing Page */
+.subnav-container {
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: absolute;
+  z-index: 999;
+  left: 0;
+  right: 0;
+}
+
+.subnav-container.fixed {
+  position: fixed;
+}
+
+.subnav-container nav {
+  display: inline-block;
+  background-color: #313131;
+}
+
+.subnav-container ul li {
+  display: inline-block;
+}
+
+.subnav-container ul li a {
+  padding: 15px 30px 12px;
+  display: block;
+  font-weight: normal;
+  color: #fff;
+  opacity: 0.7;
+  font-size: 14px;
+  border-bottom: 4px solid #313131;
+}
+
+.subnav-container ul li a:hover,
+.subnav-container ul li a.active  {
+  opacity: 1;
+  background-color: #292929;
+  border-color: #4cb277;
+}
+
+.subnav-container ul li a.active {
+  font-weight: bold;
+}
+
 .landing h1.title {
   font-size: 50px;
+}
+
+@media (min-width: 992px) {
+  .menu > li:hover > ul {
+    visibility: hidden;
+  }
+}
+
+.subnav-container.toggle-subnav {
+  overflow: hidden;
+  -webkit-transform: perspective(400) rotate3d(1,0,0,-90deg);
+  -webkit-transform-origin: 50% 0;
+  -webkit-transition: 350ms;
+  -moz-transition: 350ms;
+  -o-transition: 350ms;
+  transition: 350ms;
+}
+
+.subnav-container.toggle-subnav.visible {
+  max-height: 1000px;
+  -webkit-transform: perspective(400) rotate3d(0,0,0,0);
+}
+
+nav.bg-dark .nav-utility,
+nav.bg-dark .nav-bar {
+  border-bottom: 0;
 }
