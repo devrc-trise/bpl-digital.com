@@ -351,6 +351,10 @@ iframe[name='google_conversion_frame'] {
   font-size: 13px !important;
 }
 
+.font16 {
+  font-size: 16px !important;
+}
+
 .font18 {
   font-size: 18px !important;
 }
@@ -557,6 +561,26 @@ nav.bg-dark .nav-bar {
   object-fit: contain;
 }
 
+.pl0 {
+  padding-left: 0px !important;
+}
+
+.pl8 {
+  padding-left: 8px !important;
+}
+
+.pl56 {
+  padding-right: 56px !important;
+}
+
+.pr0 {
+  padding-right: 0px !important;
+}
+
+.pr8 {
+  padding-right: 8px !important;
+}
+
 #journey h4 {
   font-weight: 500;
   color: #4a4a4a;
@@ -587,14 +611,6 @@ nav.bg-dark .nav-bar {
 #restaurant .right div p {
   font-family: Lato, "open sans" , "arial" , sans-serif;
   color: #ffffff;
-}
-
-.pl0 {
-  padding-left: 0px !important;
-}
-
-.pr0 {
-  padding-right: 0px !important;
 }
 
 #restaurant .images div {
@@ -639,4 +655,95 @@ nav.bg-dark .nav-bar {
 
 #favourite .read-more-b a {
   font-family: Lato, "open sans" , "arial" , sans-serif;
+}
+
+.epos {
+  color: #4a4a4a;
+  line-height: 22px;
+}
+
+.epos h3 {
+  font-weight: 400;
+}
+
+.epos h1.title {
+  font-weight: 100;
+  font-size: 69px;
+  line-height: 80px;
+}
+
+.epos .v-align-transform .subtitle {
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2.1px;
+}
+
+.epos .v-align-transform .description {
+  font-size: 14px;
+}
+
+.oval {
+  width: 34px;
+  height: 34px;
+  background-color: #d8d8d8;
+  border: solid 1px #979797;
+}
+
+.till-system {
+  width: 596.2px;
+  height: 570px;
+  background-color: #9b9b9b;
+  border: solid 1px #979797;
+}
+
+.till-system h3 {
+  line-height: 570px;
+}
+
+.getting-started {
+  padding: 60px 0 0 60px;
+}
+
+.getting-started h3 {
+  font-weight: 400;
+}
+
+.integ-logo {
+  line-height: 100.6px;
+}
+
+.main-callout {
+  position: relative;
+  height: 568.4px;
+}
+
+.main-callout div {
+  position: absolute;
+  width: 100%;
+  top: 40%;
+}
+
+.main-callout .description {
+  width: 334.3px;
+  margin: auto;
+}
+
+.epos input[type="text"],
+.epos select {
+  margin-bottom: 8px;
+}
+
+.epos .bg-secondary {
+  background-color: #f1f1f1;
+}
+
+.epos .notes {
+  height: 108px;
+}
+
+.epos input[type="submit"] {
+  background: #47b475;
+  border: 2px solid #47b475;
+  width: inherit;
 }
