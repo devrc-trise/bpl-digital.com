@@ -657,29 +657,34 @@ nav.bg-dark .nav-bar {
   font-family: Lato, "open sans" , "arial" , sans-serif;
 }
 
-.epos {
+.epos,
+.backend {
   color: #4a4a4a;
   line-height: 22px;
 }
 
-.epos h3 {
+.epos h3,
+.backend h3 {
   font-weight: 400;
 }
 
-.epos h1.title {
+.epos h1.title,
+.backend h1.title {
   font-weight: 100;
   font-size: 69px;
   line-height: 80px;
 }
 
-.epos .v-align-transform .subtitle {
+.epos .v-align-transform .subtitle,
+.backend .v-align-transform .subtitle {
   font-family: Raleway;
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 2.1px;
 }
 
-.epos .v-align-transform .description {
+.epos .v-align-transform .description,
+.backend .v-align-transform .description {
   font-size: 14px;
 }
 
@@ -734,7 +739,8 @@ nav.bg-dark .nav-bar {
   margin-bottom: 8px;
 }
 
-.epos .bg-secondary {
+.epos .bg-secondary,
+.backend .bg-secondary {
   background-color: #f1f1f1;
 }
 
@@ -746,4 +752,31 @@ nav.bg-dark .nav-bar {
   background: #47b475;
   border: 2px solid #47b475;
   width: inherit;
+}
+
+.statement {
+  background-color: #4a4a4a;
+  color: #fff;
+}
+
+.statement h3 {
+  color: #fff;
+}
+
+.backend .cras p {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.proyekto .details {
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  @media (min-width: 1200px) {
+  .clients .container {
+    width: 1200px;
+  }
 }
