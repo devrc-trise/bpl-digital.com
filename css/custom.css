@@ -380,10 +380,6 @@ iframe[name='google_conversion_frame'] {
   background-color: #2e699a;
 }
 
-.btn-filled:visited {
-  color: #fff;
-}
-
 .wwd-icon {
   background-image: url(../img/wwd-sprite.png);
   background-size: 1271px;
