@@ -1202,6 +1202,16 @@ $(document).ready(function() {
             }
         }, 100);
     });
+
+    $(window).scroll(function() {
+        var winTop = $(this).scrollTop() + 50;
+        var $submenus = $('section.submenu-item');
+        var top = $.grep($submenus, function(item) {
+            return $(item).position().top <= winTop;
+        });
+        $('.submenu-bar ul li a.active').removeClass('active');
+        $('.submenu-bar ul li a.' + $(top.pop()).attr('id')).addClass('active');
+    });
 });
 
 
