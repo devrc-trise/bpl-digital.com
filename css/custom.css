@@ -459,11 +459,6 @@ iframe[name='google_conversion_frame'] {
   font-weight: bold;
 }
 
-.landing h1.title {
-  font-size: 50px;
-  line-height: 64px;
-}
-
 @media (min-width: 992px) {
   .menu > li:hover > ul {
     visibility: hidden;
@@ -862,6 +857,10 @@ nav.fixed.scrolled .submenu-bar {
 }
 
 @media only screen and (min-width: 769px) {
+  .landing h1.title {
+    font-size: 50px;
+    line-height: 64px;
+  }
   .table-row {
     display: table;
   }
