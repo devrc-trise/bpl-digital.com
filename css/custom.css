@@ -364,7 +364,9 @@ iframe[name='google_conversion_frame'] {
 .wwd-boxed .description {
   font-size: 14px;
   line-height: 22px;
-  padding: 6px 30px 0px;
+  padding: 6px 20px 0px;
+  height: 50px;
+  overflow: hidden;
 }
 
 .wwd-boxed .btn {
@@ -618,10 +620,8 @@ section.journey .dates {
 
 #favourite .boxed img {
   margin: -4px 0 -4px -19px;
-  height: 220px;
-  width: 220px;
-  max-height: 220px;
   max-width: 220px;
+  max-height: : 220px;
 }
 
 #favourite .boxed .right {
@@ -631,6 +631,12 @@ section.journey .dates {
 
 #favourite .boxed .lead {
   line-height: 24px;
+  overflow: hidden;
+  max-height: 124px;
+}
+
+#favourite .boxed.table-row [class*="col-"] {
+  vertical-align: top;
 }
 
 #favourite h4 {
@@ -647,7 +653,7 @@ section.journey .dates {
   font-size: 16px;
   position: absolute;
   bottom: 10px;
-  right: 5px;
+  right: 10px;
 }
 
 #favourite .read-more-b {
@@ -655,7 +661,10 @@ section.journey .dates {
   font-size: 14px;
   position: absolute;
   bottom: 10px;
-  right: 5px;
+  right: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 #favourite .read-more-b a {
@@ -694,14 +703,6 @@ section.journey .dates {
   line-height: 570px;
 }
 
-.getting-started {
-  padding: 60px 0 0;
-}
-
-.getting-started h3 {
-  font-weight: 400;
-}
-
 .integ-logo {
   line-height: 100.6px;
 }
@@ -709,6 +710,10 @@ section.journey .dates {
 .main-callout {
   max-width: 334.3px;
   margin: 50px auto;
+}
+
+.main-callout h3 {
+  text-transform: uppercase;
 }
 
 .form-email-2 input[type="text"],
@@ -837,9 +842,6 @@ nav.fixed.scrolled .submenu-bar {
   .cover-submenu {
     display: none;
   }
-  .pt-sm-80 {
-    padding-top: 80px;
-  }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .proyekto {
@@ -859,7 +861,7 @@ nav.fixed.scrolled .submenu-bar {
   }
 }
 
-@media only screen and (min-width : 769px) {
+@media only screen and (min-width: 769px) {
   .table-row {
     display: table;
   }
@@ -867,6 +869,13 @@ nav.fixed.scrolled .submenu-bar {
     float: none;
     display: table-cell;
     vertical-align: middle;
+  }
+}
+
+@media only screen and (max-width: 1160px) {
+  .subnav-container ul li a {
+    font-size: 12px;
+    padding: 10px 25px 12px;
   }
 }
 

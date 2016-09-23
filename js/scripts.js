@@ -774,6 +774,10 @@ $(document).ready(function() {
         }
     }
 
+    var posField = $('input[name="POS"]');
+    if (posField.length) {
+        posField.val(getURLParameter('POS'));
+    }
 });
 
 $(window).load(function() {
@@ -1213,5 +1217,3 @@ $(document).ready(function() {
         $('.submenu-bar ul li a.' + $(top.pop()).attr('id')).addClass('active');
     });
 });
-
-
