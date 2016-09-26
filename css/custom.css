@@ -604,27 +604,42 @@ section.journey .dates {
   border: solid 4px #efefef;
   margin-left: -5px;
   margin-right: -5px;
+  width: 100%;
 }
 
 #favourite .boxed img {
   margin: -4px 0 -4px -19px;
   max-width: 220px;
   max-height: : 220px;
+  position: relative;
+  z-index: 9;
+}
+
+#favourite .boxed .img-bg {
+  /*width: 220px;
+  height: 220px;
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  background-color: #efefef;*/
+  background-size: cover;
+  width: 220px;
+  height: 220px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -4px;
 }
 
 #favourite .boxed .right {
   margin-left: -10px;
   height: 212px;
+  vertical-align: top;
 }
 
 #favourite .boxed .lead {
   line-height: 24px;
   overflow: hidden;
   max-height: 124px;
-}
-
-#favourite .boxed.table-row [class*="col-"] {
-  vertical-align: top;
 }
 
 #favourite h4 {
@@ -820,6 +835,9 @@ nav.fixed.scrolled .submenu-bar {
   #favourite .read-more-b {
     right: 10px;
   }
+  #favourite .boxed .img-bg {
+    width: inherit;
+  }
   .main-container-2 .v-align-transform h6.uppercase,
   .main-container-2 .v-align-transform .description {
     font-size: 12px;
@@ -852,7 +870,7 @@ nav.fixed.scrolled .submenu-bar {
   }
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
   .landing h1.title {
     font-size: 50px;
     line-height: 64px;

@@ -325,68 +325,7 @@
               </p>
             </div>
           </div>
-          <div class="row boxed-container">
-            <div class="col-md-6">
-              <div class="row boxed mb16 table-row">
-                <div class="col-md-5 col-sm-4 left">
-                  <img src="img/favourite-1.png" />
-                </div>
-                <div class="col-md-7 col-sm-8 right">
-                  <h4>Tesla</h4>
-                  <p class="lead">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-                  <div class="text-right read-more" style="color: #c91b00;">Read More &nbsp; &rarr;</div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="row boxed mb16 table-row">
-                <div class="col-md-5 col-sm-4 left">
-                  <img src="img/favourite-2.png" />
-                </div>
-                <div class="col-md-7 col-sm-8 right">
-                  <h4>City Mapper</h4>
-                  <p class="lead">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-                  <div class="text-right read-more-b">
-                      Read more at <a href="www.citymapper.com" style="color: #3d9d00;">www.citymapper.com</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row boxed-container">
-            <div class="col-md-6">
-              <div class="row boxed mb16 table-row">
-                <div class="col-md-5 col-sm-4 left">
-                  <img src="img/favourite-3.png" />
-                </div>
-                <div class="col-md-7 col-sm-8 right">
-                  <h4>Tesla</h4>
-                  <p class="lead">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-                  <div class="text-right read-more" style="color: #f06900;">Read More &nbsp; &rarr;</div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="row boxed mb16 table-row">
-                <div class="col-md-5 col-sm-4 left">
-                  <img src="img/favourite-4.png" />
-                </div>
-                <div class="col-md-7 col-sm-8 right">
-                  <h4>City Mapper</h4>
-                  <p class="lead">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-                  <div class="text-right read-more-b">Read more at <a href="www.citymapper.com" style="color: #e5e20c;">www.citymapper.com</a></div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div id="favourite-items" class="row boxed-container"></div>
         </div>
       </section>
       <section class="bg-dark pt64 pb64">
@@ -430,35 +369,19 @@
       </footer>
     </div>
 
-    <script id="blog-item-template" type="text/x-handlebars-template">
-      <div class="row boxed-container">
-        <div class="col-md-6">
-          <div class="row boxed mb16 table-row">
-            <div class="col-md-5 col-sm-4 left">
-              <img src="img/favourite-1.png" />
-            </div>
-            <div class="col-md-7 col-sm-8 right">
-              <h4>Tesla</h4>
-              <p class="lead">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-              <div class="text-right read-more" style="color: #c91b00;">Read More &nbsp; &rarr;</div>
-            </div>
+    <script id="favourite-item-template" type="text/x-handlebars-template">
+      <div class="col-md-6 favourite-{{id}}">
+        <div class="row boxed mb16 table-row">
+          <div class="col-md-5 col-sm-4 left pl0 pr0">
+            <!-- <div class="img-bg hidden-xs"></div> -->
+            <!-- <img src="{{image}}" /> -->
+            <div class="img-bg" style="background-image: url({{image}})"></div>
           </div>
-        </div>
-        <div class="col-md-6">
-          <div class="row boxed mb16 table-row">
-            <div class="col-md-5 col-sm-4 left">
-              <img src="img/favourite-2.png" />
-            </div>
-            <div class="col-md-7 col-sm-8 right">
-              <h4>City Mapper</h4>
-              <p class="lead">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-              <div class="text-right read-more-b">
-                  Read more at <a href="www.citymapper.com" style="color: #3d9d00;">www.citymapper.com</a>
-              </div>
+          <div class="col-md-7 col-sm-8 right">
+            <h4>{{title}}</h4>
+            <p class="lead">{{description}}</p>
+            <div class="text-right read-more-b">
+                Read more at <a href="{{link}}" target="_blank" style="color: {{link_color}};">{{{hideUrlProtocol link}}}</a>
             </div>
           </div>
         </div>
@@ -470,6 +393,7 @@
     <script src="js/flexslider.min.js"></script>
     <script src="js/smooth-scroll.min.js"></script>
     <script src="js/parallax.js"></script>
+    <script src="js/handlebars.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/about-us.js"></script>
   </body>
