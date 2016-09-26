@@ -765,18 +765,17 @@ section.journey .dates {
 }
 
 .submenu-bar {
-  visibility: hidden;
-  overflow: hidden;
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   left: 0;
   right: 0;
   -webkit-box-shadow: 0 4px 4px -2px #ccc;
   -moz-box-shadow: 0 4px 4px -2px #ccc;
   box-shadow: 0 4px 4px -2px #ccc;
+  display: none;
 }
 
 nav.fixed.scrolled .submenu-bar {
-  visibility: visible;
+  display: block;
 }
 
 .submenu-bar ul li {

@@ -858,8 +858,10 @@ function updateNav() {
     if (scrollY > mr_firstSectionHeight) {
         if (!mr_navScrolled) {
             mr_nav.addClass('scrolled');
-            $('.subnav-container').addClass('fixed');
             mr_navScrolled = true;
+            if (mr_nav.parent().hasClass('.nav-container')) {
+                $('.subnav-container').addClass('fixed');
+            }
             return;
         }
     } else {
