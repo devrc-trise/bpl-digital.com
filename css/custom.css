@@ -586,21 +586,14 @@ section.journey .dates {
   color: #4a4a4a;
 }
 
-#restaurant .left {
-  padding: 120px 135px 0;
+#restaurant .video {
+  margin: 0 0 -8px -2px;
 }
 
-#restaurant .right div {
-  background-color: rgba(0, 0, 0, .7);
-  margin-left: 1px;
-  padding: 30px 30px 5px;
-  position: absolute;
-  bottom: 0;
-}
-
-#restaurant .right div p {
-  font-family: Lato, "open sans" , "arial" , sans-serif;
-  color: #ffffff;
+@media only screen and (max-width: 500px) {
+  #restaurant .video iframe {
+    height: 400px;
+  }
 }
 
 #restaurant .images div {
@@ -830,6 +823,9 @@ nav.fixed.scrolled .submenu-bar {
   .main-container-2 .v-align-transform h6.uppercase,
   .main-container-2 .v-align-transform .description {
     font-size: 12px;
+  }
+  .wwd-boxed .description {
+    height: inherit;
   }
 }
 
