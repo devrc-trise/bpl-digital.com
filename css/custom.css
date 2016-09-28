@@ -907,7 +907,7 @@ hr.green-line {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.till-logos ul li {
+.till-logos ul li.till-logo {
   line-height: 70px;
   vertical-align: middle;
 }
@@ -954,4 +954,8 @@ hr.green-line {
 
 .till-logos .comtrex {
   width: 146px !important;
+}
+
+.flex-control-nav {
+  left: 0;
 }
