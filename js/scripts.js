@@ -347,6 +347,13 @@ $(document).ready(function() {
         controlNav: false
     });
 
+    $('.till-logos').flexslider({
+        animation: "slide",
+        animationLoop: false,
+        itemWidth: 210,
+        itemMargin: 5
+    });
+
     // Lightbox gallery titles
 
     $('.lightbox-grid li a').each(function(){
