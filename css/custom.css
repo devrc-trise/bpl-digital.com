@@ -906,3 +906,52 @@ hr.green-line {
 .raleway {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+.till-logos ul li {
+  line-height: 70px;
+  vertical-align: middle;
+}
+
+.till-logos .squirrel {
+  width: 214px !important;
+}
+
+.till-logos .tissl {
+  width: 220px !important;
+}
+
+.till-logos .lightspeed {
+  width: 242px !important;
+}
+
+.till-logos .revel {
+  width: 180px !important;
+}
+
+.till-logos .impos {
+  width: 139px !important;
+}
+
+.till-logos .casio {
+  width: 255px !important;
+}
+
+.till-logos .zonal {
+  width: 211px !important;
+}
+
+.till-logos .ncr {
+  width: 226px !important;
+}
+
+.till-logos .micros {
+  width: 248px !important;
+}
+
+.till-logos .ibs {
+  width: 225px !important;
+}
+
+.till-logos .comtrex {
+  width: 146px !important;
+}

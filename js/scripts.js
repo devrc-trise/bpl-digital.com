@@ -350,8 +350,10 @@ $(document).ready(function() {
     $('.till-logos').flexslider({
         animation: "slide",
         animationLoop: false,
-        itemWidth: 210,
-        itemMargin: 5
+        itemWidth: 180,
+        itemMargin: 35,
+        directionNav: true,
+        controlNav: true
     });
 
     // Lightbox gallery titles
