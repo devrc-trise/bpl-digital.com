@@ -802,6 +802,10 @@ nav.fixed.scrolled .submenu-bar {
   font-weight: bold;
 }
 
+.submenu-bar ul li a:hover {
+  border-bottom: 6px solid #47b375;
+}
+
 @media (max-width: 767px) {
   .text-xs-left {
     text-align: left;
@@ -958,4 +962,40 @@ hr.green-line {
 
 .flex-control-nav {
   left: 0;
+}
+
+nav.bg-dark .menu > li:nth-child(n+2):nth-last-child(n+2) > a {
+  border-bottom: 4px solid #292929;
+}
+
+nav.bg-dark .menu > li:nth-child(n+2):nth-last-child(n+2):hover > a,
+nav.bg-dark .menu > li:nth-child(n+2) > a.active {
+  border-bottom: 4px solid #4cb277;
+  opacity: 1;
+}
+
+.nav-bar a {
+  max-height: 54px;
+}
+
+#banner-bottom {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  z-index: 99;
+}
+
+#banner-bottom a {
+  padding: 10px 0;
+  display: inline-block;
+  color: #fff;
+}
+
+#banner-bottom a .fa {
+  font-size: 24px;
+}
+
+#banner-bottom a span {
+  vertical-align: middle;
 }
