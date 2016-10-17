@@ -375,42 +375,8 @@ iframe[name='google_conversion_frame'] {
   height: 54px;
 }
 
-.btn.btn-3d:hover {
+.btn.btn-blue:hover {
   background-color: #2e699a;
-}
-
-.wwd-icon {
-  background-image: url(../img/wwd-sprite.png);
-  background-size: 1271px;
-  height: 113px;
-  width: 113px;
-  background-repeat: no-repeat;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.mobile-apps-icon {
-  background-position: -173px -76px;
-}
-
-.tablet-apps-icon {
-  background-position: -557px -76px;
-}
-
-.epos-integration-icon {
-  background-position: -949px -76px;
-}
-
-.house-systems-icon {
-  background-position: -173px -426px;
-}
-
-.websites-icon {
-  background-position: -561px -427px;
-}
-
-.strategy-consulting-icon {
-  background-position: -949px -426px;
 }
 
 .subnav-container {
@@ -734,7 +700,7 @@ section.journey .dates {
 }
 
 .main-container-2 .notes {
-  height: 108px;
+  height: 166px;
 }
 
 .main-container-2 input[type="submit"] {
@@ -896,7 +862,7 @@ nav.fixed.scrolled .submenu-bar {
 @media only screen and (max-width: 1190px) {
   .subnav-container ul li a {
     font-size: 12px;
-    padding: 10px 25px 12px;
+    padding: 10px 20px 12px;
   }
 }
 
@@ -911,53 +877,65 @@ hr.green-line {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.till-logos ul li.till-logo {
+.integration-logos ul li.integration-logo {
   line-height: 70px;
   vertical-align: middle;
 }
 
-.till-logos .squirrel {
+.integration-logos .squirrel {
   width: 214px !important;
 }
 
-.till-logos .tissl {
+.integration-logos .tissl {
   width: 207px !important;
 }
 
-.till-logos .lightspeed {
+.integration-logos .lightspeed {
   width: 242px !important;
 }
 
-.till-logos .revel {
+.integration-logos .revel {
   width: 180px !important;
 }
 
-.till-logos .impos {
+.integration-logos .impos {
   width: 139px !important;
 }
 
-.till-logos .casio {
+.integration-logos .casio {
   width: 255px !important;
 }
 
-.till-logos .zonal {
+.integration-logos .zonal {
   width: 211px !important;
 }
 
-.till-logos .ncr {
+.integration-logos .ncr {
   width: 226px !important;
 }
 
-.till-logos .micros {
+.integration-logos .micros {
   width: 248px !important;
 }
 
-.till-logos .ibs {
+.integration-logos .ibs {
   width: 225px !important;
 }
 
-.till-logos .comtrex {
-  width: 146px !important;
+.integration-logos .comtrex {
+  width: 211px !important;
+}
+
+.integration-logos .paypal {
+  width: 141px !important;
+}
+
+.integration-logos .localz {
+  width: 195px !important;
+}
+
+.integration-logos .braintree {
+  width: 250px !important;
 }
 
 .flex-control-nav {

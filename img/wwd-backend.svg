@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="124px" height="123px" viewBox="0 0 124 123" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.1 (33804) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 31</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <ellipse id="path-1" cx="55.4126366" cy="55.18811" rx="54.4310244" ry="54.4310244"></ellipse>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.130434783 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <circle id="path-3" cx="52.7185742" cy="53.1301002" r="52.5700401"></circle>
+        <linearGradient x1="34.2283566%" y1="68.2612446%" x2="82.1436922%" y2="11.7365216%" id="linearGradient-5">
+            <stop stop-color="#000000" stop-opacity="-0.00269493352" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.130434783" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="BPL" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon-List" transform="translate(-193.000000, -493.000000)">
+            <g id="Group-31" transform="translate(199.000000, 499.000000)">
+                <g id="Group-29-Copy" transform="translate(0.604019, 0.500000)">
+                    <g id="Group-10">
+                        <g id="Group-2">
+                            <g id="Oval-4">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                <use stroke="#4CAF50" stroke-width="4" fill="#51B555" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            </g>
+                        </g>
+                        <g id="Group-9" transform="translate(2.913699, 1.913699)">
+                            <mask id="mask-4" fill="white">
+                                <use xlink:href="#path-3"></use>
+                            </mask>
+                            <g id="Mask"></g>
+                            <g mask="url(#mask-4)" id="Mask" fill="url(#linearGradient-5)">
+                                <g transform="translate(-25.699543, 27.914338)">
+                                    <path d="M0.782738104,61.6840819 L51.3533881,0.801355848 C51.3533881,0.801355848 55.8337319,1.01330618 58.4525269,11.2340099 C61.0713219,21.4547136 59.3261049,31.9174901 59.3261049,31.9174901 L62.7410828,44.7464627 L99.5121525,55.1388027 L66.8260268,94.0926104 L0.782738104,61.6840819 Z"></path>
+                                </g>
+                            </g>
+                            <g id="Group-9-Copy" mask="url(#mask-4)" fill="url(#linearGradient-5)">
+                                <g transform="translate(45.744066, 19.034506)" id="Mask">
+                                    <path d="M0.331507003,24.1245812 L22.2253246,0.90046853 C22.2253246,0.90046853 24.1676563,2.86917986 25.2767742,7.19787529 C26.3858922,11.5265707 25.1259255,11.5177672 25.1259255,11.5177672 L26.5722446,16.9511226 L42.6228005,16.5719648 L28.779499,33.0697691 L0.331507003,24.1245812 Z"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <path d="M78.2747212,42.80247 L78.2747212,44.8954523 C78.2747212,46.5539954 76.9339601,47.8985103 75.2706114,47.8985103 L70.8090818,47.8985103 L70.8090818,49.6262387 L75.2706114,49.6262387 C76.9297354,49.6262387 78.2747212,50.9680087 78.2747212,52.6292967 L78.2747212,64.0923544 C78.2747212,65.7508976 76.9339601,67.0954125 75.2706114,67.0954125 L70.8090818,67.0954125 L70.8090818,68.8231408 L75.2706114,68.8231408 C76.9297354,68.8231408 78.2747212,70.1649109 78.2747212,71.8261988 L78.2747212,83.2892566 C78.2747212,84.9477997 76.9339601,86.2923146 75.2706114,86.2923146 L31.1523954,86.2923146 C29.4932714,86.2923146 28.1482856,84.9505446 28.1482856,83.2892566 L28.1482856,71.8261988 C28.1482856,70.1676557 29.4890467,68.8231408 31.1523954,68.8231408 L36.6804448,68.8231408 L36.6804448,67.0954125 L31.1523954,67.0954125 C29.4932714,67.0954125 28.1482856,65.7536424 28.1482856,64.0923544 L28.1482856,52.6292967 C28.1482856,50.9707535 29.4890467,49.6262387 31.1523954,49.6262387 L36.6804448,49.6262387 L36.6804448,47.8985103 L31.1523954,47.8985103 C29.4932714,47.8985103 28.1482856,46.5567403 28.1482856,44.8954523 L28.1482856,33.4323945 C28.1482856,31.7738514 29.4890467,30.4293365 31.1523954,30.4293365 L60.4845301,30.4293365 C60.2613371,31.2505767 60.1424082,32.1134748 60.1424082,33.0020404 C60.1424082,38.4056099 64.5392683,42.80247 69.9428378,42.80247 L78.2747212,42.80247 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                <path d="M64.1420307,48.0978011 L42.578129,48.0978011" id="Line" stroke="#51B555" stroke-width="2.5" stroke-linecap="square"></path>
+                <path d="M64.1420307,67.2551272 L42.578129,67.2551272" id="Line-Copy-9" stroke="#51B555" stroke-width="2.5" stroke-linecap="square"></path>
+                <path d="M87.1284996,27.9252381 C86.2023262,23.5001874 82.3604217,20.1385211 77.6609494,20.1385211 C73.9219531,20.1385211 70.7318003,22.2652896 69.1195726,25.3525342 C65.2433654,25.7298641 62.2247262,29.0229251 62.2247262,33.0020404 C62.2247262,37.2555774 65.6893008,40.7201519 69.9428378,40.7201519 L86.6825642,40.7201519 C90.2157442,40.7201519 93.0971725,37.8387236 93.0971725,34.2712409 C93.0971725,30.8752718 90.4558632,28.0967517 87.1284996,27.9252381 L87.1284996,27.9252381 Z" id="Shape-Copy" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

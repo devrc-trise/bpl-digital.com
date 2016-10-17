@@ -347,9 +347,9 @@ $(document).ready(function() {
         controlNav: false
     });
 
-    $('.till-logos').flexslider({
+    $('.integration-logos').flexslider({
         animation: "slide",
-        animationLoop: false,
+        animationLoop: true,
         itemWidth: 180,
         itemMargin: 35,
         directionNav: true,

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="123px" height="123px" viewBox="0 0 123 123" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.1 (33804) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 23</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <ellipse id="path-1" cx="55.4126366" cy="55.18811" rx="54.4310244" ry="54.4310244"></ellipse>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.130434783 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <circle id="path-3" cx="52.7185742" cy="53.1301002" r="52.5700401"></circle>
+        <linearGradient x1="34.2283566%" y1="68.2612446%" x2="82.1436922%" y2="11.7365216%" id="linearGradient-5">
+            <stop stop-color="#000000" stop-opacity="-0.00269493352" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.130434783" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="34.2283566%" y1="68.2612446%" x2="76.8138114%" y2="20.8955256%" id="linearGradient-6">
+            <stop stop-color="#000000" stop-opacity="-0.00269493352" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0" offset="21.0845064%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.130434783" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-7">
+            <feGaussianBlur stdDeviation="4" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="BPL" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon-List" transform="translate(-588.000000, -494.000000)">
+            <g id="Group-23" transform="translate(594.000000, 500.000000)">
+                <g id="Group-10" transform="translate(0.087688, 0.527474)">
+                    <g id="Group-2">
+                        <g id="Oval-4">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use stroke="#48ABA2" stroke-width="4" fill="#4DB6AC" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                    </g>
+                    <g id="Group-9" transform="translate(2.913699, 1.913699)">
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <g id="Mask"></g>
+                        <g mask="url(#mask-4)">
+                            <g transform="translate(-29.699543, 26.914338)">
+                                <polygon id="Mask" fill="url(#linearGradient-5)" points="14.6406312 19.2652803 98.1282657 19.2652803 76.7367188 46.4482238 74.2799695 66.0655012 97.0997714 95.803709 46.2491869 95.803709"></polygon>
+                                <polygon id="Mask-Copy-2" fill="url(#linearGradient-6)" filter="url(#filter-7)" points="13.3538897 38.8016 96.8415242 38.8016 76.6297584 47.5983822 74.1730091 67.2156596 85.0780401 77.1881705 34.2274556 77.1881705"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group-22" transform="translate(25.510793, 28.220534)">
+                    <path d="M-6.65950211e-08,16.4402572 L61.2887664,16.4402572 L61.2887664,49.0602546 C61.2887664,51.818905 59.0530532,54.055233 56.2862496,54.055233 L5.00251673,54.055233 C2.23970299,54.055233 -6.65950211e-08,51.8148917 -6.65950211e-08,49.0602546 L-6.65950211e-08,16.4402572 Z" id="Rectangle-16" fill="#FFFFFF"></path>
+                    <path d="M61.2887664,16.5634752 L9.10948472e-09,16.5634752 L9.10933551e-09,5.48265005 C9.10929288e-09,2.72128647 2.23571315,0.482758991 5.0025168,0.482758991 L56.2862497,0.482758991 C59.0490634,0.482758991 61.2887664,2.71871368 61.2887664,5.48265005 L61.2887664,16.5634752 Z M51.611272,5.33238963 C51.611272,4.77928056 52.0565708,4.33089706 52.6127646,4.33089706 L56.2846652,4.33089706 C56.8377743,4.33089706 57.2861578,4.77619583 57.2861578,5.33238963 L57.2861578,9.00429028 C57.2861578,9.55739935 56.840859,10.0057828 56.2846652,10.0057828 L52.6127646,10.0057828 C52.0596555,10.0057828 51.611272,9.56048408 51.611272,9.00429028 L51.611272,5.33238963 Z M41.3623222,5.33238963 C41.3623222,4.77928056 41.8076209,4.33089706 42.3638147,4.33089706 L46.0357154,4.33089706 C46.5888244,4.33089706 47.0372079,4.77619583 47.0372079,5.33238963 L47.0372079,9.00429028 C47.0372079,9.55739935 46.5919092,10.0057828 46.0357154,10.0057828 L42.3638147,10.0057828 C41.8107057,10.0057828 41.3623222,9.56048408 41.3623222,9.00429028 L41.3623222,5.33238963 Z M31.1133723,5.33238963 C31.1133723,4.77928056 31.5586711,4.33089706 32.1148649,4.33089706 L35.7867655,4.33089706 C36.3398746,4.33089706 36.7882581,4.77619583 36.7882581,5.33238963 L36.7882581,9.00429028 C36.7882581,9.55739935 36.3429593,10.0057828 35.7867655,10.0057828 L32.1148649,10.0057828 C31.5617558,10.0057828 31.1133723,9.56048408 31.1133723,9.00429028 L31.1133723,5.33238963 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                    <polygon id="Line" fill="#4DB6AC" points="3.30540799 13.0210544 2.17043084 13.0210544 2.17043084 15.2910087 3.30540799 15.2910087 57.7843115 15.2910087 58.9192887 15.2910087 58.9192887 13.0210544 57.7843115 13.0210544"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
