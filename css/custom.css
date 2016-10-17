@@ -571,6 +571,30 @@ section.journey .dates {
   margin: 0px -1px 0 0;
 }
 
+#restaurant .images > div:first-child {
+  margin-left: 15px;
+}
+
+#restaurant .images > div:last-child {
+  margin-left: -10px;
+}
+
+#restaurant .left {
+  padding-right: 45px;
+}
+
+@media only screen and (max-width: 768px) {
+  #restaurant .left {
+    padding-right: 15px;
+  }
+  #restaurant .images > div:first-child {
+    margin-left: 0;
+  }
+  #restaurant .images > div:last-child {
+    margin-left: 0;
+  }
+}
+
 #favourite .boxed {
   border: solid 4px #efefef;
   margin-left: -5px;
@@ -790,9 +814,6 @@ nav.fixed.scrolled .submenu-bar {
   .pt-xs-80 {
     padding-top: 80px;
   }
-  #restaurant .left {
-    padding: 80px 30px 0;
-  }
   #favourite .boxed .left {
     background-color: #efefef;
     text-align: center;
@@ -839,12 +860,9 @@ nav.fixed.scrolled .submenu-bar {
   #favourite .row.boxed-container .col-md-7 {
     width: 66.66666666%;
   }
-  #restaurant .left {
-    padding: 80px 45px 10px;
-  }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .landing h1.title {
     font-size: 50px;
     line-height: 64px;
@@ -976,4 +994,27 @@ nav.bg-dark .menu > li:nth-child(n+2) > a.active {
 
 #banner-bottom a span {
   vertical-align: middle;
+}
+
+@media (max-width: 767px) {
+  .cover.fullscreen {
+    height: 100vh;
+    padding: 0;
+  }
+  .cover.fullscreen .slides li {
+    height: 100vh;
+  }
+  .cover.fullscreen .container {
+    top: 10%;
+  }
+  .crabbies .cover.fullscreen .container {
+    top: 0%;
+  }
+  .crabbies .cover .align-bottom {
+    padding-bottom: 60px;
+  }
+  .backend .cover.fullscreen .slides li {
+    height: auto;
+    min-height: 100vh;
+  }
 }
