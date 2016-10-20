@@ -344,6 +344,10 @@ iframe[name='google_conversion_frame'] {
 }
 /* end Loader */
 
+.font14 {
+  font-size: 14px !important;
+}
+
 .font18 {
   font-size: 18px !important;
 }
@@ -674,6 +678,10 @@ section.journey .dates {
   line-height: 22px;
 }
 
+.text-shadow {
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
 .main-container-2 h3 {
   font-weight: 400;
 }
@@ -734,7 +742,7 @@ section.journey .dates {
 }
 
 .statement {
-  background-color: #4a4a4a;
+  background-color: #292929;
   color: #fff;
 }
 
@@ -1017,4 +1025,55 @@ nav.bg-dark .menu > li:nth-child(n+2) > a.active {
     height: auto;
     min-height: 100vh;
   }
+}
+
+.quote-symbol {
+  font-size: 82px;
+  font-weight: 600;
+  color: #9b9b9b;
+}
+
+.quote-text {
+  font-style: italic;
+  width: 666px;
+}
+
+.quote-person div:first-child {
+  padding-right: 12px;
+}
+
+.quote-person > div:last-child {
+  padding-left: 12px;
+}
+
+.display-table {
+  display: table;
+}
+
+.table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.hor-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-xl {
+  height: 79px;
+  line-height: 77px;
+  min-width: 309px;
+  font-size: 18px;
+  font-weight: bold;
+  border: 3px solid;
+}
+
+.btn-red, .btn-red:visited {
+  border-color: #dd3903;
+  color: #dd3903;
+}
+
+.btn-red:hover {
+  background-color: #dd3903;
 }
