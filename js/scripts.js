@@ -356,6 +356,15 @@ $(document).ready(function() {
         controlNav: true
     });
 
+    $('.client-logos').flexslider({
+        animation: "slide",
+        animationLoop: true,
+        itemWidth: 205,
+        itemMargin: 50,
+        directionNav: true,
+        controlNav: true
+    });
+
     // Lightbox gallery titles
 
     $('.lightbox-grid li a').each(function(){

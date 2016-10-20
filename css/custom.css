@@ -964,6 +964,42 @@ hr.green-line {
   width: 250px !important;
 }
 
+@media (min-width: 1200px) {
+  .client-logos {
+    width: 1025px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.client-logos ul li.client-logo {
+  line-height: 95px;
+  vertical-align: middle;
+}
+
+.client-logos .lpq {
+  width: 173px !important;
+}
+
+.client-logos .grind {
+  width: 221px !important;
+}
+
+.client-logos .hsbc {
+  width: 243px !important;
+}
+
+.client-logos .bnl {
+  width: 265px !important;
+}
+
+.client-logos .greene-king {
+  width: 123px !important;
+}
+
+
+
+
 .flex-control-nav {
   left: 0;
 }
@@ -1035,7 +1071,7 @@ nav.bg-dark .menu > li:nth-child(n+2) > a.active {
 
 .quote-text {
   font-style: italic;
-  width: 666px;
+  max-width: 666px;
 }
 
 .quote-person div:first-child {
