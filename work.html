@@ -369,7 +369,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/flexslider.min.js"></script>
     <script src="js/lightbox.min.js"></script>
-    <script src="js/masonry-v4.min.js"></script>
+    <script src="js/masonry.min.js"></script>
     <script src="js/twitterfetcher.min.js"></script>
     <script src="js/spectragram.min.js"></script>
     <script src="js/ytplayer.min.js"></script>
@@ -377,5 +377,13 @@
     <script src="js/smooth-scroll.min.js"></script>
     <script src="js/parallax.js"></script>
     <script src="js/scripts.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        // ensure masonry is run
+        setTimeout(function() {
+          initializeMasonry();
+        }, 3000);
+      });
+    </script>
   </body>
 </html>
