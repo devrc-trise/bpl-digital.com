@@ -1113,3 +1113,33 @@ nav.bg-dark .menu > li:nth-child(n+2) > a.active {
 .btn-red:hover {
   background-color: #dd3903;
 }
+
+.budweiser .overlay:before {
+  opacity: 0.1;
+}
+
+@media only screen and (max-width: 767px) {
+  .budweiser .overview img {
+    float: none !important;
+    margin: 24px auto 0;
+    display: block;
+  }
+}
+
+.budweiser .operators img.hidden-xs {
+  position: absolute;
+  right: 0;
+  top: 15px;
+}
+
+.budweiser .customers img.hidden-xs {
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+  .budweiser .customers .text {
+    padding-left: 32px;
+  }
+}
