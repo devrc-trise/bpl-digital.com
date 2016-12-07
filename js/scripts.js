@@ -798,43 +798,40 @@ $(document).ready(function() {
     }
 });
 
+window.initializeMasonry = function() {
+    if ($('.masonry').length) {
+        var container = document.querySelector('.masonry');
+        var msnry = new Masonry(container, {
+            itemSelector: '.masonry-item'
+        });
+
+        msnry.on('layoutComplete', function() {
+
+            mr_firstSectionHeight = $('.main-container section:nth-of-type(1)').outerHeight(true);
+
+            // Fix floating project filters to bottom of projects container
+
+            if ($('.filters.floating').length) {
+                setupFloatingProjectFilters();
+                updateFloatingFilters();
+                window.addEventListener("scroll", updateFloatingFilters, false);
+            }
+
+            $('.masonry').addClass('fadeIn');
+            $('.masonry-loader').addClass('fadeOut');
+            if ($('.masonryFlyIn').length) {
+                masonryFlyIn();
+            }
+        });
+
+        msnry.layout();
+    }
+}
+
 $(window).load(function() {
     "use strict";
 
-    // Initialize Masonry
-
-    setTimeout(function() {
-        if ($('.masonry').length) {
-            var container = document.querySelector('.masonry');
-            var msnry = new Masonry(container, {
-                itemSelector: '.masonry-item'
-            });
-
-            msnry.on('layoutComplete', function() {
-
-                mr_firstSectionHeight = $('.main-container section:nth-of-type(1)').outerHeight(true);
-
-                // Fix floating project filters to bottom of projects container
-
-                if ($('.filters.floating').length) {
-                    setupFloatingProjectFilters();
-                    updateFloatingFilters();
-                    window.addEventListener("scroll", updateFloatingFilters, false);
-                }
-
-                $('.masonry').addClass('fadeIn');
-                $('.masonry-loader').addClass('fadeOut');
-                if ($('.masonryFlyIn').length) {
-                    masonryFlyIn();
-                }
-            });
-
-            msnry.layout();
-        }
-    }, 1000);
-
     // Initialize twitter feed
-
     var setUpTweets = setInterval(function() {
         if ($('.tweets-slider').find('li.flex-active-slide').length) {
             clearInterval(setUpTweets);
@@ -849,9 +846,10 @@ $(window).load(function() {
         }
     }, 500);
 
+    // Initialize Masonry
+    initializeMasonry();
+
     mr_firstSectionHeight = $('.main-container section:nth-of-type(1)').outerHeight(true);
-
-
 });
 
 function updateNav() {
