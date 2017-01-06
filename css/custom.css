@@ -1143,3 +1143,16 @@ nav.bg-dark .menu > li:nth-child(n+2) > a.active {
     padding-left: 32px;
   }
 }
+
+.col-sm-15 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+@media (min-width: 768px) {
+  .col-sm-15 {
+    width: 20%;
+    float: left;
+  }
+}
