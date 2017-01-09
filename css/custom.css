@@ -1114,7 +1114,8 @@ nav.bg-dark .menu > li:nth-child(n+2) > a.active {
   background-color: #dd3903;
 }
 
-.budweiser .overlay:before {
+.budweiser .overlay:before,
+.bnl-website .overlay:before {
   opacity: 0.1;
 }
 
@@ -1154,5 +1155,110 @@ nav.bg-dark .menu > li:nth-child(n+2) > a.active {
   .col-sm-15 {
     width: 20%;
     float: left;
+  }
+}
+
+.bnl-website .cover h6 {
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: 1.5px;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-left: 24px;
+}
+
+.bnl-website .cover .read-more {
+  position: absolute;
+  z-index: 9;
+  bottom: 80px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.bnl-website #previous-site h4.bolder,
+.bnl-website #new-site h4.bolder {
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 1.4px;
+  white-space: nowrap;
+}
+
+.bnl-website .lead.number {
+  font-weight: bold;
+  color: #c72c2b;
+}
+
+.btn-bnl {
+  border: 1px solid #fff;
+  font-weight: 600;
+}
+
+.image-bg .btn.btn-bnl:hover {
+  color: #c72c2b;
+}
+
+.btn-red, .btn-red:visited {
+  border-color: #c72c2b;
+  color: #c72c2b;
+}
+
+.btn-red:hover {
+  background-color: #c72c2b;
+}
+
+.bnl-website .testimonial-lg {
+  font-size: 33px;
+  font-weight: normal;
+  font-style: italic;
+  font-stretch: normal;
+  letter-spacing: 4.4px;
+  color: #000;
+  line-height: 48px;
+}
+
+.green-up-sm {
+  vertical-align: bottom;
+  margin-bottom: -5px;
+  width: 28px;
+}
+
+.green-up-lg {
+  margin-left: -15px;
+  margin-right: -15px;
+  width: 64px;
+}
+
+.bnl-website .metric-item {
+  width: 201px;
+}
+
+.bnl-website .percent {
+  font-family: Helvetica;
+  font-size: 46px;
+  font-weight: bold;
+  letter-spacing: 2.9px;
+  color: #000;
+  margin-top: 5px;
+}
+
+.bnl-website .background-image-holder {
+  background-size: 102vh !important;
+  background-repeat: no-repeat !important;
+  background-position-x: 80% !important;
+  background-position-y: 75% !important;
+  background-color: #d93130 !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .bnl-website #previous-site h4.bolder,
+  .bnl-website #new-site h4.bolder {
+    font-size: 18px;
+  }
+  .bnl-website .testimonial-lg {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .bnl-website .metric-item {
+    width: 100%;
   }
 }
