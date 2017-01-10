@@ -859,6 +859,8 @@ $(window).load(function() {
     //     initializeMasonry(); });
     // }
     var imgLoad = imagesLoaded('.masonry');
+    console.log(imgLoad);
+    window.imgLoad = imgLoad;
     imgLoad.on( 'always', function() {
       console.log( imgLoad.images.length + ' images loaded' );
       // detect which image is broken
