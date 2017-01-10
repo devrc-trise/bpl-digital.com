@@ -858,19 +858,6 @@ $(window).load(function() {
     //       }
     //     initializeMasonry(); });
     // }
-    var imgLoad = imagesLoaded('.masonry');
-    console.log(imgLoad);
-    window.imgLoad = imgLoad;
-    imgLoad.on( 'always', function() {
-      console.log( imgLoad.images.length + ' images loaded' );
-      // detect which image is broken
-      for ( var i = 0, len = imgLoad.images.length; i < len; i++ ) {
-        var image = imgLoad.images[i];
-        var result = image.isLoaded ? 'loaded' : 'broken';
-        console.log( 'image is ' + result + ' for ' + image.img.src );
-      }
-      initializeMasonry();
-    });
 
     mr_firstSectionHeight = $('.main-container section:nth-of-type(1)').outerHeight(true);
 });
@@ -1266,6 +1253,21 @@ $(document).ready(function() {
     if (isMobileDevice()) {
         $('#banner-bottom').removeClass('hide');
     }
+
+    console.log('masonry');
+    var imgLoad = imagesLoaded('.masonry');
+    console.log(imgLoad);
+    window.imgLoad = imgLoad;
+    imgLoad.on( 'always', function() {
+      console.log( imgLoad.images.length + ' images loaded' );
+      // detect which image is broken
+      for ( var i = 0, len = imgLoad.images.length; i < len; i++ ) {
+        var image = imgLoad.images[i];
+        var result = image.isLoaded ? 'loaded' : 'broken';
+        console.log( 'image is ' + result + ' for ' + image.img.src );
+      }
+      initializeMasonry();
+    });
 });
 
 var isMobileDevice = function() {
