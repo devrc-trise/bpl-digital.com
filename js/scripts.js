@@ -847,7 +847,7 @@ $(window).load(function() {
     }, 500);
 
     // Initialize Masonry
-    initializeMasonry();
+    $('.masonry').imagesLoaded(initializeMasonry);
 
     mr_firstSectionHeight = $('.main-container section:nth-of-type(1)').outerHeight(true);
 });
@@ -1196,7 +1196,7 @@ $(document).ready(function() {
     addEvent(document, 'mouseout', function(evt) {
         if (evt.toElement == null && evt.relatedTarget == null && checkPopup.arghPopupAgain) {
             checkPopup.arghPopupAgain = false;
-            // localStorage.setItem('user_popup', JSON.stringify(checkPopup));
+            localStorage.setItem('user_popup', JSON.stringify(checkPopup));
             $('.before-popup-bg').fadeIn();
             $('.before-popup').fadeIn();
         };
