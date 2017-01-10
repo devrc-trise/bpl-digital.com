@@ -847,7 +847,8 @@ $(window).load(function() {
     }, 500);
 
     // Initialize Masonry
-    $('.masonry').imagesLoaded(initializeMasonry);
+    // $('.masonry').imagesLoaded(initializeMasonry);
+    $('.masonry').imagesLoaded(function() { initializeMasonry(); });
 
     mr_firstSectionHeight = $('.main-container section:nth-of-type(1)').outerHeight(true);
 });
