@@ -846,9 +846,6 @@ $(window).load(function() {
         }
     }, 500);
 
-    // Initialize Masonry
-    initializeMasonry();
-
     mr_firstSectionHeight = $('.main-container section:nth-of-type(1)').outerHeight(true);
 });
 
@@ -1242,6 +1239,13 @@ $(document).ready(function() {
 
     if (isMobileDevice()) {
         $('#banner-bottom').removeClass('hide');
+    }
+
+    // Initialize Masonry
+    if (typeof window.imagesLoaded !== 'undefined') {
+        $('.masonry').imagesLoaded(initializeMasonry);
+    } else {
+        initializeMasonry();
     }
 });
 
