@@ -1196,7 +1196,7 @@ $(document).ready(function() {
     addEvent(document, 'mouseout', function(evt) {
         if (evt.toElement == null && evt.relatedTarget == null && checkPopup.arghPopupAgain) {
             checkPopup.arghPopupAgain = false;
-            localStorage.setItem('user_popup', JSON.stringify(checkPopup));
+            // localStorage.setItem('user_popup', JSON.stringify(checkPopup));
             $('.before-popup-bg').fadeIn();
             $('.before-popup').fadeIn();
         };
