@@ -846,19 +846,6 @@ $(window).load(function() {
         }
     }, 500);
 
-    // Initialize Masonry
-    // $('.masonry').imagesLoaded(initializeMasonry);
-    // $('.masonry').imagesLoaded(function() {
-    //     console.log( imgLoad.images.length + ' images loaded' );
-    //       // detect which image is broken
-    //       for ( var i = 0, len = imgLoad.images.length; i < len; i++ ) {
-    //         var image = imgLoad.images[i];
-    //         var result = image.isLoaded ? 'loaded' : 'broken';
-    //         console.log( 'image is ' + result + ' for ' + image.img.src );
-    //       }
-    //     initializeMasonry(); });
-    // }
-
     mr_firstSectionHeight = $('.main-container section:nth-of-type(1)').outerHeight(true);
 });
 
@@ -1254,20 +1241,12 @@ $(document).ready(function() {
         $('#banner-bottom').removeClass('hide');
     }
 
-    // console.log('masonry');
-    // var imgLoad = imagesLoaded('.masonry');
-    // console.log(imgLoad);
-    // window.imgLoad = imgLoad;
-    // imgLoad.on( 'always', function() {
-    //   console.log( imgLoad.images.length + ' images loaded' );
-    //   // detect which image is broken
-    //   for ( var i = 0, len = imgLoad.images.length; i < len; i++ ) {
-    //     var image = imgLoad.images[i];
-    //     var result = image.isLoaded ? 'loaded' : 'broken';
-    //     console.log( 'image is ' + result + ' for ' + image.img.src );
-    //   }
-      initializeMasonry();
-    // });
+    // Initialize Masonry
+    if (window.imagesLoaded != undefined && $('.masonry').length) {
+        $('.masonry').imagesLoaded(initializeMasonry);
+    } else {
+        initializeMasonry();
+    }
 });
 
 var isMobileDevice = function() {
