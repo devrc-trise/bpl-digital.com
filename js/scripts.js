@@ -248,10 +248,17 @@ $(document).ready(function() {
 
             if (filters.indexOf(filter) == -1) {
                 $(this).addClass('inactive');
+                $(this).removeClass('prepend');
             } else {
                 $(this).removeClass('inactive');
+                $(this).addClass('prepend');
             }
         });
+
+        var masonryEl = '.masonry';
+        var prependItemsEl = '.masonry-item.prepend';
+        $(masonryEl).prepend($(prependItemsEl));
+        new Masonry(document.querySelector(masonryEl), { prepended: prependItemsEl });
 
         if (filter == 'all') {
             $(this).closest('.projects').find('.project').removeClass('inactive');
