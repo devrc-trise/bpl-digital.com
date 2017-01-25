@@ -1241,9 +1241,12 @@ nav.bg-dark .menu > li:nth-child(n+2) > a.active {
   background-color: #d93130 !important;
 }
 
-.bnl-website .quote-text {
-  font-size: 20px;
-  line-height: 34px;
+.bnl-website .statement-2 {
+  font-size: 23px;
+  line-height: 38px;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media only screen and (max-width: 767px) {
