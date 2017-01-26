@@ -1249,6 +1249,10 @@ nav.bg-dark .menu > li:nth-child(n+2) > a.active {
   margin-right: auto;
 }
 
+.bnl-website .masonry-item img {
+  box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.15);
+}
+
 @media only screen and (max-width: 767px) {
   .bnl-website .testimonial-lg {
     font-size: 16px;
