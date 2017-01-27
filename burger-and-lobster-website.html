@@ -11,6 +11,7 @@
     <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/grid-fx.css" rel="stylesheet" type="text/css" media="all" />
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="img/bpl-favicon.ico"/>
@@ -307,33 +308,67 @@
           </div>
           <div class="row">
             <div class="col-md-10 col-md-offset-1">
-              <div class="row masonry masonryFlyIn">
-                <div class="col-sm-6 col-md-4 text-left masonry-item project">
-                  <img src="img/bnl-site-gallery/map-desktop.png">
+              <div class="content">
+                <div class="grid masonry">
+                  <div class="grid__item masonry-item mb0" data-size="1260x805">
+                    <a href="img/bnl-site-gallery/map-desktop.png" class="img-wrap">
+                      <img src="img/bnl-site-gallery/map-desktop.png">
+                    </a>
+                  </div>
+                  <div class="grid__item masonry-item mb0" data-size="1260x805">
+                    <a href="img/bnl-site-gallery/home-desktop.png" class="img-wrap">
+                      <img src="img/bnl-site-gallery/home-desktop.png">
+                    </a>
+                  </div>
+                  <div class="grid__item masonry-item mb0" data-size="750x1334">
+                    <a href="img/bnl-site-gallery/home-mobile.png" class="img-wrap">
+                      <img src="img/bnl-site-gallery/home-mobile.png">
+                    </a>
+                  </div>
+
+                  <div class="grid__item masonry-item mb0" data-size="750x1334">
+                    <a href="img/bnl-site-gallery/selected-restaurant-mobile.png" class="img-wrap">
+                      <img src="img/bnl-site-gallery/selected-restaurant-mobile.png">
+                    </a>
+                  </div>
+                  <div class="grid__item masonry-item mb0" data-size="1260x805">
+                    <a href="img/bnl-site-gallery/menu-desktop.png" class="img-wrap">
+                      <img src="img/bnl-site-gallery/menu-desktop.png">
+                    </a>
+                  </div>
+                  <div class="grid__item masonry-item mb0" data-size="750x1334">
+                    <a href="img/bnl-site-gallery/near-locations-mobile.png" class="img-wrap">
+                      <img src="img/bnl-site-gallery/near-locations-mobile.png">
+                    </a>
+                  </div>
+
+                  <div class="grid__item masonry-item mb0" data-size="1260x805">
+                    <a href="img/bnl-site-gallery/selected-restaurant-desktop.png" class="img-wrap">
+                      <img src="img/bnl-site-gallery/selected-restaurant-desktop.png">
+                    </a>
+                  </div>
+                  <div class="grid__item masonry-item mb0" data-size="1260x805">
+                    <a href="img/bnl-site-gallery/our-classics-desktop.png" class="img-wrap">
+                      <img src="img/bnl-site-gallery/our-classics-desktop.png">
+                    </a>
+                  </div>
+                  <div class="grid__item masonry-item mb0" data-size="1260x805">
+                    <a href="img/bnl-site-gallery/our-journey-desktop.png" class="img-wrap">
+                      <img src="img/bnl-site-gallery/our-journey-desktop.png">
+                    </a>
+                  </div>
                 </div>
-                <div class="col-sm-6 col-md-4 text-right masonry-item project">
-                  <img src="img/bnl-site-gallery/home-desktop.png">
-                </div>
-                <div class="col-sm-6 col-md-4 text-center masonry-item project">
-                  <img src="img/bnl-site-gallery/home-mobile.png">
-                </div>
-                <div class="col-sm-6 col-md-4 text-center masonry-item project">
-                  <img src="img/bnl-site-gallery/selected-restaurant-mobile.png">
-                </div>
-                <div class="col-sm-6 col-md-4 text-left masonry-item project">
-                  <img src="img/bnl-site-gallery/menu-desktop.png">
-                </div>
-                <div class="col-sm-6 col-md-4 text-right masonry-item project">
-                  <img src="img/bnl-site-gallery/near-locations-mobile.png">
-                </div>
-                <div class="col-sm-6 col-md-4 text-center masonry-item project">
-                  <img src="img/bnl-site-gallery/selected-restaurant-desktop.png">
-                </div>
-                <div class="col-sm-6 col-md-4 text-center masonry-item project">
-                  <img src="img/bnl-site-gallery/our-classics-desktop.png">
-                </div>
-                <div class="col-sm-6 col-md-4 text-center masonry-item project">
-                  <img src="img/bnl-site-gallery/our-journey-desktop.png">
+                <div class="preview">
+                  <button class="action action--previous">
+                    <i class="fa fa-angle-left" aria-hidden="true"></i><span class="text-hidden">Previous</span>
+                  </button>
+                  <button class="action action--close">
+                    <i class="fa fa-times-thin" aria-hidden="true"></i><span class="text-hidden">Close</span>
+                  </button>
+                  <button class="action action--next">
+                    <i class="fa fa-angle-right" aria-hidden="true"></i><span class="text-hidden">Previous</span>
+                  </button>
+                  <div class="description description--preview"></div>
                 </div>
               </div>
             </div>
@@ -405,8 +440,11 @@
     <script src="js/flexslider.min.js"></script>
     <script src="js/smooth-scroll.min.js"></script>
     <script src="js/parallax.js"></script>
+    <script src="js/classie.js"></script>
     <script src="js/imagesloaded.pkgd.min.js"></script>
     <script src="js/masonry.min.js"></script>
+    <script src="js/modernizr-custom.js"></script>
+    <script src="js/grid-fx.js"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>
