@@ -435,7 +435,7 @@
     dummy.setAttributeNS(null, 'version', '1.1');
     dummy.setAttributeNS(null, 'width', '100%');
     dummy.setAttributeNS(null, 'height', '100%');
-    dummy.setAttributeNS(null, 'class', 'overlay');
+    dummy.setAttributeNS(null, 'class', 'gridfx-overlay');
     var g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
     var circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
     circle.setAttributeNS(null, 'cx', 0);

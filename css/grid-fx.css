@@ -79,7 +79,7 @@
 
 /* circle overlay (generated SVG) */
 
-.overlay {
+.gridfx-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -87,7 +87,7 @@
   opacity: .95;
 }
 
-.overlay circle {
+.gridfx-overlay circle {
   -webkit-transition: fill-opacity 0.3s, -webkit-transform 0s 0.3s;
   transition: fill-opacity 0.3s, transform 0s 0.3s;
   -webkit-transition-timing-function: ease-out;
@@ -98,7 +98,7 @@
   fill-opacity: 0;
 }
 
-.preview--open .overlay circle {
+.preview--open .gridfx-overlay circle {
   -webkit-transition: -webkit-transform 0.4s;
   transition: transform 0.4s;
   -webkit-transform: scale3d(1, 1, 1);
